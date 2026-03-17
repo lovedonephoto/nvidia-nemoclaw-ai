@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const footerLinks = {
   Product: ["Features", "Pricing", "Documentation"],
   Resources: ["GitHub Repository", "Official Docs", "Contact Support"],
@@ -12,10 +14,10 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-1">
-            <a href="/" className="font-display text-xl font-bold">
+            <Link to="/" className="font-display text-xl font-bold">
               <span className="text-gradient-primary">Nemo</span>
-              <span className="text-foreground">Claw Toolkit</span>
-            </a>
+              <span className="text-foreground"> Claw Toolkit</span>
+            </Link>
             <p className="text-muted-foreground text-sm mt-3 leading-relaxed">
               Premium Setup Toolkit and automated deployment guides for NemoClaw agents.
             </p>
@@ -38,7 +40,20 @@ const Footer = () => {
                   if (link === "Contact Support") href = `mailto:${supportEmail}`;
                   if (link === "Privacy Policy") href = "https://polar.sh/nemoclawsetup/legal/privacy";
                   if (link === "Terms of Service") href = "https://polar.sh/nemoclawsetup/legal/terms";
-                  if (link === "Refund Policy") href = "https://polar.sh/nemoclawsetup/legal/refund";
+                  if (link === "Refund Policy") href = "/refund";
+
+                  if (href.startsWith("/")) {
+                    return (
+                      <li key={link}>
+                        <Link 
+                          to={href} 
+                          className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          {link}
+                        </Link>
+                      </li>
+                    );
+                  }
 
                   return (
                     <li key={link}>
