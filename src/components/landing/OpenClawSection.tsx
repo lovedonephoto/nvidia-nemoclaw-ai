@@ -34,11 +34,19 @@ const OpenClawSection = () => {
                 autonomous agents powered by NVIDIA's GPU infrastructure. Fork it, extend it, ship it.
               </p>
               <div className="flex gap-3">
-                <Button variant="hero" size="lg">
+                <Button 
+                  variant="hero" 
+                  size="lg"
+                  onClick={() => window.open('https://github.com/NVIDIA/NemoClaw', '_blank')}
+                >
                   <Github className="w-4 h-4 mr-1" />
                   View on GitHub
                 </Button>
-                <Button variant="hero-outline" size="lg">
+                <Button 
+                  variant="hero-outline" 
+                  size="lg"
+                  onClick={() => window.open('https://docs.nvidia.com/nemo-framework/user-guide/latest/index.html', '_blank')}
+                >
                   Read the Docs
                 </Button>
               </div>

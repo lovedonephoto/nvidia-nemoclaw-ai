@@ -30,7 +30,10 @@ const Footer = () => {
               <ul className="space-y-2.5">
                 {links.map((link) => (
                   <li key={link}>
-                    <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    <a 
+                      href={link === "Documentation" ? "https://docs.nvidia.com/nemo-framework/user-guide/latest/index.html" : link === "Pricing" ? "#pricing" : "#"} 
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
                       {link}
                     </a>
                   </li>
@@ -45,7 +48,7 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-primary transition-colors">Twitter</a>
-            <a href="#" className="hover:text-primary transition-colors">GitHub</a>
+            <a href="https://github.com/NVIDIA/NemoClaw" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">GitHub</a>
             <a href="#" className="hover:text-primary transition-colors">Discord</a>
             <a href="#" className="hover:text-primary transition-colors">LinkedIn</a>
           </div>

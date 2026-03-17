@@ -23,12 +23,22 @@ const CTASection = () => {
             Join thousands of developers and enterprises already building with NemoClaw.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="hero" size="lg" className="text-base px-8 py-6">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-base px-8 py-6"
+              onClick={() => window.open('https://buy.polar.sh/polar_cl_iOIqgNKmid5LFFmMwu56jM4gUWGjD5HlkAIyQ2xo12N', '_blank')}
+            >
               Start Building Now
               <ArrowRight className="w-4 h-4 ml-1" />
             </Button>
-            <Button variant="hero-outline" size="lg" className="text-base px-8 py-6">
-              Talk to an Expert
+            <Button 
+              variant="hero-outline" 
+              size="lg" 
+              className="text-base px-8 py-6"
+              onClick={() => window.location.href = 'mailto:help@nemoclawaiapp.com'}
+            >
+              Get Support
             </Button>
           </div>
         </motion.div>
