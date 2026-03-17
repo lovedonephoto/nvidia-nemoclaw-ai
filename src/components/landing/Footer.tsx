@@ -1,9 +1,10 @@
 const footerLinks = {
-  Product: ["Features", "Pricing", "Documentation", "API Reference", "Changelog"],
-  Company: ["About", "Blog", "Careers", "Press"],
-  Resources: ["Community", "Tutorials", "Status", "Support"],
-  Legal: ["Privacy", "Terms", "Security"],
+  Product: ["Features", "Pricing", "Documentation"],
+  Resources: ["GitHub Repository", "Official Docs", "Contact Support"],
+  Legal: ["Privacy Policy", "Terms of Service", "Refund Policy"],
 };
+
+const supportEmail = "brelescom@gmail.com";
 
 const Footer = () => {
   return (
@@ -28,16 +29,30 @@ const Footer = () => {
             <div key={category}>
               <h4 className="font-display font-semibold text-sm text-foreground mb-4">{category}</h4>
               <ul className="space-y-2.5">
-                {links.map((link) => (
-                  <li key={link}>
-                    <a 
-                      href={link === "Documentation" ? "https://docs.nvidia.com/nemo-framework/user-guide/latest/index.html" : link === "Pricing" ? "#pricing" : "#"} 
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
+                {links.map((link) => {
+                  let href = "#";
+                  if (link === "Features") href = "#features";
+                  if (link === "Pricing") href = "#pricing";
+                  if (link === "Documentation" || link === "Official Docs") href = "https://docs.nvidia.com/nemo-framework/user-guide/latest/index.html";
+                  if (link === "GitHub Repository") href = "https://github.com/NVIDIA/NemoClaw";
+                  if (link === "Contact Support") href = `mailto:${supportEmail}`;
+                  if (link === "Privacy Policy") href = "https://polar.sh/nemoclawsetup/legal/privacy";
+                  if (link === "Terms of Service") href = "https://polar.sh/nemoclawsetup/legal/terms";
+                  if (link === "Refund Policy") href = "https://polar.sh/nemoclawsetup/legal/refund";
+
+                  return (
+                    <li key={link}>
+                      <a 
+                        href={href} 
+                        target={href.startsWith("http") ? "_blank" : undefined}
+                        rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                        className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        {link}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
