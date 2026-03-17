@@ -37,7 +37,7 @@ const HeroSection = () => {
           </div>
         </motion.div>
 
-        <h1 className="sr-only">NemoClaw | NVIDIA NemoClaw AI Agents</h1>
+        <h1 className="sr-only">Nemo Claw | NVIDIA Nemo Claw AI Agents</h1>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
