@@ -38,8 +38,8 @@ const Footer = () => {
                   if (link === "Documentation" || link === "Official Docs") href = "https://docs.nvidia.com/nemo-framework/user-guide/latest/index.html";
                   if (link === "GitHub Repository") href = "https://github.com/NVIDIA/NemoClaw";
                   if (link === "Contact Support") href = `mailto:${supportEmail}`;
-                  if (link === "Privacy Policy") href = "https://polar.sh/nemoclawsetup/legal/privacy";
-                  if (link === "Terms of Service") href = "https://polar.sh/nemoclawsetup/legal/terms";
+                  if (link === "Privacy Policy") href = "/privacy";
+                  if (link === "Terms of Service") href = "/terms";
                   if (link === "Refund Policy") href = "/refund";
 
                   if (href.startsWith("/")) {
