@@ -36,7 +36,7 @@ const CTASection = () => {
               variant="hero-outline" 
               size="lg" 
               className="text-base px-8 py-6"
-              onClick={() => window.location.href = 'mailto:brelescom@gmail.com'}
+              onClick={() => window.location.href = 'mailto:soylamistugce@gmail.com'}
             >
               Get Support
             </Button>

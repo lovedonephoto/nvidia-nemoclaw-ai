@@ -4,7 +4,7 @@ const footerLinks = {
   Legal: ["Privacy Policy", "Terms of Service", "Refund Policy"],
 };
 
-const supportEmail = "brelescom@gmail.com";
+const supportEmail = "soylamistugce@gmail.com";
 
 const Footer = () => {
   return (
