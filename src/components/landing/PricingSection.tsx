@@ -42,48 +42,50 @@ const PricingSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {plans.map((plan, i) => (
-            <motion.div
-              key={plan.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className={`rounded-xl p-6 flex flex-col ${
-                plan.featured
-                  ? "glass-panel border-primary/40 glow-sm relative"
-                  : "glass-panel"
-              }`}
-            >
-              {plan.featured && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-semibold">
-                  Most Popular
-                </div>
-              )}
-              <h3 className="font-display text-xl font-semibold text-foreground">{plan.name}</h3>
-              <p className="text-muted-foreground text-sm mt-1">{plan.description}</p>
-              <div className="mt-6 mb-6">
-                <span className="text-4xl font-display font-bold text-foreground">{plan.price}</span>
-                <span className="text-muted-foreground text-sm">{plan.period}</span>
-              </div>
-              <ul className="space-y-3 mb-8 flex-1">
-                {plan.features.map((f) => (
-                  <li key={f} className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Check className="w-4 h-4 text-primary flex-shrink-0" />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <Button 
-                variant={plan.featured ? "hero" : "hero-outline"} 
-                className="w-full"
-                onClick={() => plan.url && window.open(plan.url, '_blank')}
+        <div className="flex justify-center max-w-5xl mx-auto">
+          <div className="w-full max-w-md">
+            {plans.map((plan, i) => (
+              <motion.div
+                key={plan.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className={`rounded-xl p-6 flex flex-col ${
+                  plan.featured
+                    ? "glass-panel border-primary/40 glow-sm relative"
+                    : "glass-panel"
+                }`}
               >
-                {plan.cta}
-              </Button>
-            </motion.div>
-          ))}
+                {plan.featured && (
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-semibold">
+                    Most Popular
+                  </div>
+                )}
+                <h3 className="font-display text-xl font-semibold text-foreground">{plan.name}</h3>
+                <p className="text-muted-foreground text-sm mt-1">{plan.description}</p>
+                <div className="mt-6 mb-6">
+                  <span className="text-4xl font-display font-bold text-foreground">{plan.price}</span>
+                  <span className="text-muted-foreground text-sm">{plan.period}</span>
+                </div>
+                <ul className="space-y-3 mb-8 flex-1">
+                  {plan.features.map((f) => (
+                    <li key={f} className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <Check className="w-4 h-4 text-primary flex-shrink-0" />
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+                <Button 
+                  variant={plan.featured ? "hero" : "hero-outline"} 
+                  className="w-full"
+                  onClick={() => plan.url && window.open(plan.url, '_blank')}
+                >
+                  {plan.cta}
+                </Button>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

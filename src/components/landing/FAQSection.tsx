@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "How does the pricing work?",
     answer:
-      "NemoClaw offers three tiers: a free Starter plan with 1,000 API calls/month, a Pro plan at $79/month with 100K API calls and unlimited models, and a custom Enterprise plan with unlimited usage and dedicated support. All plans include a free trial period.",
+      "We offer a single high-value 'Premium Setup Kit' for a one-time payment of $99. This kit includes automated installation scripts, security policy templates, and comprehensive documentation to get your AI agents running securely in minutes.",
   },
   {
     question: "Can I bring my own AI models to NemoClaw?",
