@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 const plans = [
   {
     name: "Premium Setup Kit",
-    price: "$99",
+    price: "$49.99",
     period: "one-time",
     description: "Automated scripts & expert documentation",
     features: [

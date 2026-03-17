@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "How does the pricing work?",
     answer:
-      "We offer a single high-value 'Premium Setup Kit' for a one-time payment of $99. This kit includes automated installation scripts, security policy templates, and comprehensive documentation to get your AI agents running securely in minutes.",
+      "We offer a single high-value 'Premium Setup Kit' for a one-time payment of $49.99. This kit includes automated installation scripts, security policy templates, and comprehensive documentation to get your AI agents running securely in minutes.",
   },
   {
     question: "Can I bring my own AI models to NemoClaw?",

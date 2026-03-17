@@ -68,7 +68,7 @@ const HeroSection = () => {
               className="px-8 h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full min-w-[200px] transition-all"
               onClick={() => window.open('https://buy.polar.sh/polar_cl_iOIqgNKmid5LFFmMwu56jM4gUWGjD5HlkAIyQ2xo12N', '_blank')}
             >
-              Get Setup ($99)
+              Get Setup ($49.99)
             </button>
             <button
               className="px-8 h-12 border border-primary/20 hover:bg-primary/5 text-foreground rounded-full min-w-[200px] transition-all"
