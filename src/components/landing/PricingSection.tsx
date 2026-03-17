@@ -7,7 +7,7 @@ const plans = [
     name: "Premium Setup Kit",
     price: "$49.99",
     period: "one-time",
-    description: "Automated scripts & expert documentation",
+    description: "Expert setup toolkit & automation scripts",
     features: [
       "Automated Install Script (.sh)",
       "Security Policy Templates",
@@ -38,7 +38,7 @@ const PricingSection = () => {
             Simple, Transparent <span className="text-gradient-primary">Pricing</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Start free. Scale as you grow. No hidden fees.
+            Get your AI agents running securely with our professional automation kit.
           </p>
         </motion.div>
 

@@ -13,11 +13,16 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <a href="/" className="font-display text-xl font-bold">
               <span className="text-gradient-primary">Nemo</span>
-              <span className="text-foreground">Claw</span>
+              <span className="text-foreground">Claw Toolkit</span>
             </a>
             <p className="text-muted-foreground text-sm mt-3 leading-relaxed">
-              Next-generation AI platform powered by NVIDIA Nemo.
+              Premium Setup Toolkit and automated deployment guides for NemoClaw agents.
             </p>
+            <div className="mt-4 p-3 rounded-lg bg-yellow-500/10 border border-yellow-500/20">
+              <p className="text-[10px] sm:text-xs text-muted-foreground leading-tight italic">
+                <strong>Disclaimer:</strong> This is an independent community project. It is NOT affiliated with, endorsed by, or representing NVIDIA Corporation.
+              </p>
+            </div>
           </div>
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>

@@ -21,18 +21,18 @@ const WhatIsNemoClawSection = () => {
           className="max-w-4xl mx-auto text-center mb-16"
         >
           <h2 className="font-display text-3xl sm:text-5xl font-bold mb-6">
-            What is <span className="text-gradient-primary">NVIDIA NemoClaw</span>?
+            Mastering <span className="text-gradient-primary">NemoClaw</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto mb-4">
-            NVIDIA NemoClaw is a next-generation AI agent platform built on NVIDIA Nemo technology. 
-            NemoClaw — also known as Nemo Claw — combines advanced neural reasoning with GPU-accelerated 
-            inference to create autonomous AI agents capable of understanding, planning, and executing 
-            complex tasks in real time.
+            NVIDIA NemoClaw is a powerful open-source AI agent platform. 
+            Our <strong>Premium Setup Toolkit</strong> empowers you to deploy this complex infrastructure 
+            seamlessly, leveraging GPU-accelerated inference and advanced neural reasoning 
+            with professional-grade automation.
           </p>
           <p className="text-muted-foreground text-base leading-relaxed max-w-3xl mx-auto">
-            Whether you call it NemoClaw, Nemo Claw AI, or NVIDIA Claw — the platform delivers 
-            enterprise-grade AI agent orchestration with the power of NVIDIA's cutting-edge hardware 
-            and software ecosystem.
+            Whether you are deploying NemoClaw for autonomous research or enterprise task orchestration, 
+            our kit provides the hardened security and expert configurations needed to run 
+            on NVIDIA's cutting-edge hardware ecosystem.
           </p>
         </motion.div>
 

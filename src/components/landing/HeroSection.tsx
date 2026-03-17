@@ -32,7 +32,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 mb-8">
             <Zap className="w-3.5 h-3.5 text-primary" />
             <span className="text-xs font-medium text-primary tracking-wide uppercase">
-              Powered by NVIDIA Nemo
+              Community Edition Setup Kit
             </span>
           </div>
         </motion.div>
@@ -43,8 +43,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-display font-bold tracking-tighter leading-[0.9] mb-8 max-w-7xl mx-auto"
         >
-          <span className="text-gradient-primary block text-5xl sm:text-8xl lg:text-[12rem] mb-4">Nemo Claw</span>
-          <span className="block text-2xl sm:text-4xl lg:text-6xl opacity-80 tracking-normal">NVIDIA NemoClaw AI Agents</span>
+          <span className="text-gradient-primary block text-5xl sm:text-8xl lg:text-[12rem] mb-4 text-nowrap">Nemo Setup</span>
+          <span className="block text-2xl sm:text-4xl lg:text-6xl opacity-80 tracking-normal">Premium Toolkit for NemoClaw</span>
         </motion.h1>
 
         <motion.p
@@ -53,8 +53,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          The next-generation AI platform that grips complex data, extracts intelligence,
-          and delivers actionable insights at unprecedented speed.
+          Advanced automation scripts, security templates, and hardened configurations 
+          to deploy and secure your NemoClaw AI agents with professional precision.
         </motion.p>
 
         <motion.div
@@ -86,18 +86,18 @@ const HeroSection = () => {
           className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 text-sm text-muted-foreground"
         >
           <div className="flex flex-col items-center">
-            <span className="text-2xl sm:text-3xl font-display font-bold text-foreground">10x</span>
-            <span>Faster Processing</span>
+            <span className="text-2xl sm:text-3xl font-display font-bold text-foreground">5-Min</span>
+            <span>Installation</span>
           </div>
           <div className="hidden sm:block w-px h-10 bg-border" />
           <div className="flex flex-col items-center">
-            <span className="text-2xl sm:text-3xl font-display font-bold text-foreground">99.9%</span>
-            <span>Accuracy Rate</span>
+            <span className="text-2xl sm:text-3xl font-display font-bold text-foreground">Hardened</span>
+            <span>Security Layer</span>
           </div>
           <div className="hidden sm:block w-px h-10 bg-border" />
           <div className="flex flex-col items-center">
-            <span className="text-2xl sm:text-3xl font-display font-bold text-foreground">50K+</span>
-            <span>Active Users</span>
+            <span className="text-2xl sm:text-3xl font-display font-bold text-foreground">Expert</span>
+            <span>Documentation</span>
           </div>
         </motion.div>
       </div>

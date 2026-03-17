@@ -9,8 +9,8 @@ const capabilities = [
   },
   {
     icon: Workflow,
-    title: "NVIDIA Claw Orchestration",
-    description: "Coordinate multiple NVIDIA Claw agents working together on complex workflows — from data processing to decision-making pipelines.",
+    title: "Deployment Orchestration",
+    description: "Coordinate multiple NemoClaw agents working together on complex workflows with our optimized server-side configurations.",
   },
   {
     icon: Sparkles,
@@ -19,8 +19,8 @@ const capabilities = [
   },
   {
     icon: ShieldCheck,
-    title: "Enterprise NemoClaw Security",
-    description: "Deploy NVIDIA NemoClaw in air-gapped environments with SOC 2 compliance, role-based access control, and end-to-end encryption.",
+    title: "Hardened Security Kit",
+    description: "Deploy NemoClaw in secure environments with our pre-built sandboxing policies, role-based access templates, and encryption guides.",
   },
 ];
 
@@ -37,10 +37,10 @@ const NemoClawAISection = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl sm:text-5xl font-bold mb-4">
-            <span className="text-gradient-primary">Nemo Claw AI</span> Capabilities
+            Powerful <span className="text-gradient-primary">Toolkit</span> Capabilities
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Explore what makes NVIDIA NemoClaw the most powerful AI agent platform — from autonomous reasoning to enterprise-grade security.
+            Everything you need to secure and automate your NemoClaw environment with professional-grade infrastructure.
           </p>
         </motion.div>
 

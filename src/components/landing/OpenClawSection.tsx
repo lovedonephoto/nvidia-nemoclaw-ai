@@ -24,11 +24,10 @@ const OpenClawSection = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-                GitHub <span className="text-gradient-primary">NemoClaw</span> — Open Claw
+                Powered by <span className="text-gradient-primary">OpenClaw</span>
               </h2>
               <p className="text-muted-foreground text-base leading-relaxed mb-3">
-                Open Claw is the open-source core of NVIDIA NemoClaw. Build, customize, and deploy 
-                your own NemoClaw AI agents with full access to the source code on GitHub.
+                Open Claw is the official open-source project developed by the community. The Open Claw Toolkit provides the necessary setup to build, customize, and deploy your own AI agents, supporting various implementations on top of this powerful infrastructure.
               </p>
               <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                 The NemoClaw ClawBot framework enables developers to create intelligent bots and 

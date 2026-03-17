@@ -8,9 +8,9 @@ import {
 
 const faqs = [
   {
-    question: "What is NVIDIA NemoClaw and how does it work?",
+    question: "What is this Setup Kit for NemoClaw?",
     answer:
-      "NVIDIA NemoClaw is a GPU-accelerated AI platform powered by NVIDIA Nemo. It uses advanced neural networks to process, analyze, and extract intelligence from complex data sources in real time, delivering actionable insights up to 10x faster than traditional solutions.",
+      "This is a premium automation toolkit designed to help developers and enterprises install, secure, and optimize NVIDIA's open-source NemoClaw platform. It provides tested scripts and security templates that reduce setup time from hours to minutes.",
   },
   {
     question: "What types of data can NemoClaw process?",
@@ -18,9 +18,9 @@ const faqs = [
       "NemoClaw supports a wide range of data types including structured databases, unstructured text, images, audio streams, real-time API feeds, and cloud storage. Our multi-model orchestration allows you to combine different AI models for complex, multi-modal workflows.",
   },
   {
-    question: "Is NemoClaw suitable for enterprise use?",
+    question: "Is this toolkit suitable for production use?",
     answer:
-      "Absolutely. NemoClaw is built with enterprise-grade security including end-to-end encryption, SOC 2 compliance, zero-trust architecture, SSO integration, and audit logging. We also offer dedicated infrastructure and on-premise deployment options for mission-critical workloads.",
+      "Yes. Our templates include zero-trust architecture recommendations and sandbox configurations specifically designed to help you secure NemoClaw agents in professional environments.",
   },
   {
     question: "How does the pricing work?",

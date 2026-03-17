@@ -15,7 +15,7 @@ const features = [
   {
     icon: Shield,
     title: "Enterprise Security",
-    description: "End-to-end encryption with SOC 2 compliance and zero-trust architecture.",
+    description: "Policy-based sandboxing following enterprise security best practices and zero-trust architecture.",
   },
   {
     icon: Layers,
