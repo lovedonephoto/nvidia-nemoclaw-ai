@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
           <h1 className="font-display text-4xl sm:text-5xl font-bold mb-8 text-gradient-primary">Privacy Policy</h1>
           
           <div className="glass-panel p-8 rounded-2xl border-primary/20 space-y-6 text-muted-foreground leading-relaxed">
-            <p>At Nemo Claw Setup, we respect your privacy and are committed to protecting your personal data.</p>
+            <p>At Nemo Claw Setup (nemoclawaiapp.com), we respect your privacy and are committed to protecting your personal data.</p>
 
             <section>
               <h2 className="text-xl font-semibold text-foreground mb-3">1. Information We Collect</h2>
