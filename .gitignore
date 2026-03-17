@@ -28,3 +28,7 @@ dist-ssr
 .env.local
 .env.*.local
 
+# Product Assets (Do not commit these to public repo)
+setup-kit/
+setup-kit.zip
+
