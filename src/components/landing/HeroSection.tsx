@@ -73,10 +73,10 @@ const HeroSection = () => {
               Get Setup ($49.99)
             </button>
             <button
-              className="px-8 h-12 border border-primary/20 hover:bg-primary/5 text-foreground rounded-full min-w-[200px] transition-all"
-              onClick={() => window.open('https://github.com/NVIDIA/NemoClaw', '_blank')}
+              className="px-8 h-12 border border-primary/20 hover:bg-primary/5 text-foreground rounded-full min-w-[200px] transition-all flex items-center justify-center gap-2"
+              onClick={() => window.open('https://apps.apple.com/us/app/ai-agent-best-ai-assistant/id6760222159', '_blank')}
             >
-              Learn More
+              Download App
             </button>
           </div>
         </motion.div>
