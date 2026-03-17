@@ -45,7 +45,7 @@ const HeroSection = () => {
           className="font-display font-bold tracking-tighter leading-[0.9] mb-8 max-w-7xl mx-auto"
           aria-hidden="true"
         >
-          <span className="text-gradient-primary block text-5xl sm:text-8xl lg:text-[12rem] mb-4 text-nowrap">NemoClaw</span>
+          <span className="text-gradient-primary block text-5xl sm:text-8xl lg:text-[12rem] mb-4 text-nowrap">Nemo Claw</span>
           <span className="block text-2xl sm:text-4xl lg:text-6xl opacity-80 tracking-normal">Premium Setup Toolkit</span>
         </motion.div>
 
