@@ -8,34 +8,44 @@ import {
 
 const faqs = [
   {
-    question: "What is this Setup Kit for NemoClaw?",
+    question: "What is NemoClaw and how does NVIDIA Nemo Claw work?",
     answer:
-      "This is a premium automation toolkit designed to help developers and enterprises install, secure, and optimize NVIDIA's open-source NemoClaw platform. It provides tested scripts and security templates that reduce setup time from hours to minutes.",
+      "NemoClaw (also known as NVIDIA Nemo Claw) is a GPU-accelerated AI agent platform built on NVIDIA Nemo. It deploys autonomous AI agents that reason, plan, and execute complex tasks using neural networks optimized for NVIDIA hardware.",
   },
   {
-    question: "What types of data can NemoClaw process?",
+    question: "How do I install NemoClaw on Mac, Ubuntu, or Docker?",
     answer:
-      "NemoClaw supports a wide range of data types including structured databases, unstructured text, images, audio streams, real-time API feeds, and cloud storage. Our multi-model orchestration allows you to combine different AI models for complex, multi-modal workflows.",
+      "Our Premium Setup Kit provides one-command installation scripts for Ubuntu, native Apple Silicon support for Mac, and pre-built Docker images. The toolkit automates CUDA driver setup, dependency resolution, and service configuration across all platforms.",
   },
   {
-    question: "Is this toolkit suitable for production use?",
+    question: "What is the difference between NemoClaw and OpenClaw?",
     answer:
-      "Yes. Our templates include zero-trust architecture recommendations and sandbox configurations specifically designed to help you secure NemoClaw agents in professional environments.",
+      "OpenClaw is the open-source foundation providing core AI agent capabilities. NemoClaw extends OpenClaw with enterprise security, automated install scripts, ClawBot drag-and-drop builder, NVIDIA Nemotron integration, and professional deployment templates.",
   },
   {
-    question: "How does the pricing work?",
+    question: "What is OpenClaw AI and the Open Claw GitHub project?",
     answer:
-      "We offer a single high-value 'Premium Setup Kit' for a one-time payment of $49.99. This kit includes automated installation scripts, security policy templates, and comprehensive documentation to get your AI agents running securely in minutes.",
+      "Open Claw is the official open-source community project on GitHub. OpenClaw AI provides the core framework for building custom AI agents, with 12K+ GitHub stars and 200+ community plugins powering the NemoClaw ecosystem.",
   },
   {
-    question: "Can I bring my own AI models to NemoClaw?",
+    question: "What is NemoClaw ClawBot?",
     answer:
-      "Yes. NemoClaw supports bring-your-own-model (BYOM) workflows. You can upload custom models, fine-tune pre-trained models with your own data, and deploy them alongside our built-in models — all through a simple API or web interface.",
+      "NemoClaw ClawBot is the bot-building framework that enables developers to create intelligent bots and autonomous AI agents with drag-and-drop tools — no deep ML expertise required. It runs on NVIDIA GPU infrastructure for real-time inference.",
   },
   {
-    question: "What kind of support does NemoClaw offer?",
+    question: "What is NanoClaw and how does it relate to NemoClaw?",
     answer:
-      "Starter users get access to community support and documentation. Pro users receive priority email and chat support. Enterprise customers get 24/7 dedicated support with SLA guarantees, a dedicated success manager, and custom onboarding.",
+      "NanoClaw is the lightweight edge runtime for NemoClaw, designed for IoT devices, NVIDIA Jetson, and resource-constrained environments. It brings NemoClaw AI agent capabilities to edge computing with optimized inference.",
+  },
+  {
+    question: "Can I use NemoClaw with NVIDIA Nemotron models?",
+    answer:
+      "Yes. NemoClaw has native integration with NVIDIA Nemotron models for enhanced reasoning and language understanding. You can also bring your own models (BYOM) and deploy them alongside built-in models.",
+  },
+  {
+    question: "How does NemoClaw pricing work?",
+    answer:
+      "We offer a Premium Setup Kit for a one-time payment of $49.99, including automated installation scripts, security templates, and expert documentation. The underlying NemoClaw platform is open-source and free to use.",
   },
 ];
 

@@ -3,6 +3,8 @@ import HeroSection from "@/components/landing/HeroSection";
 import WhatIsNemoClawSection from "@/components/landing/WhatIsNemoClawSection";
 import FeaturesSection from "@/components/landing/FeaturesSection";
 import NemoClawAISection from "@/components/landing/NemoClawAISection";
+import NemoClawInstallSection from "@/components/landing/NemoClawInstallSection";
+import NemoClawVsOpenClawSection from "@/components/landing/NemoClawVsOpenClawSection";
 import UseCasesSection from "@/components/landing/UseCasesSection";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";
 import OpenClawSection from "@/components/landing/OpenClawSection";
@@ -20,7 +22,9 @@ const Index = () => {
       <WhatIsNemoClawSection />
       <FeaturesSection />
       <NemoClawAISection />
+      <NemoClawInstallSection />
       <UseCasesSection />
+      <NemoClawVsOpenClawSection />
       <HowItWorksSection />
       <OpenClawSection />
       <IntegrationsSection />
