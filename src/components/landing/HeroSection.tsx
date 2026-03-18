@@ -1,11 +1,18 @@
 import { motion } from "framer-motion";
-import { Zap } from "lucide-react";
+import { Zap, Star } from "lucide-react";
 import { useState, useEffect } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
+  const avatars = [
+    "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop&crop=faces",
+    "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&h=100&fit=crop&crop=faces",
+    "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=100&h=100&fit=crop&crop=faces",
+    "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces",
+  ];
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 sm:pt-16">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background image */}
       <div className="absolute inset-0">
         <img
@@ -65,18 +72,38 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="flex flex-col items-center gap-8"
         >
+          {/* Social Proof Section */}
+          <div className="flex flex-col items-center gap-3 mb-2">
+            <div className="flex -space-x-3 overflow-hidden">
+              {avatars.map((url, i) => (
+                <img
+                  key={i}
+                  className="inline-block h-10 w-10 rounded-full ring-2 ring-background grayscale hover:grayscale-0 transition-all duration-300"
+                  src={url}
+                  alt={`User ${i}`}
+                />
+              ))}
+              <div className="flex items-center justify-center h-10 w-10 rounded-full bg-primary/20 ring-2 ring-background backdrop-blur-sm text-[10px] font-bold text-primary">
+                +500
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="flex gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-3.5 h-3.5 fill-primary text-primary" />
+                ))}
+              </div>
+              <span className="text-sm font-medium text-muted-foreground">
+                Trusted by <span className="text-foreground font-bold">500+</span> developers world-wide
+              </span>
+            </div>
+          </div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
-              className="px-8 h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full min-w-[200px] transition-all"
+              className="px-12 h-16 bg-primary hover:bg-primary/90 hover:scale-105 active:scale-95 text-primary-foreground font-bold text-lg rounded-full min-w-[280px] transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3"
               onClick={() => window.open('https://buy.polar.sh/polar_cl_iOIqgNKmid5LFFmMwu56jM4gUWGjD5HlkAIyQ2xo12N', '_blank')}
             >
               Get Setup ($49.99)
-            </button>
-            <button
-              className="px-8 h-12 border border-primary/20 hover:bg-primary/5 text-foreground rounded-full min-w-[200px] transition-all flex items-center justify-center gap-2"
-              onClick={() => window.open('https://apps.apple.com/us/app/ai-agent-best-ai-assistant/id6760222159', '_blank')}
-            >
-              Download App
             </button>
           </div>
         </motion.div>
