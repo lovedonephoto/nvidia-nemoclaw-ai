@@ -21,7 +21,7 @@ const WhatIsNemoClawSection = () => {
           className="max-w-4xl mx-auto text-center mb-16"
         >
           <h2 className="font-display text-3xl sm:text-5xl font-bold mb-6">
-            Mastering <span className="text-gradient-primary">NemoClaw</span>
+            What is <span className="text-gradient-primary">Nemo Claw</span>?
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto mb-4">
             NVIDIA NemoClaw is a powerful open-source AI agent platform. 
