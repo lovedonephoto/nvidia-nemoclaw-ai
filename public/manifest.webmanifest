@@ -1,0 +1,16 @@
+{
+  "name": "NemoClaw: NVIDIA Nemo Claw Install Setup",
+  "short_name": "NemoClaw",
+  "description": "Professional setup kit for NVIDIA Nemo & OpenClaw AI agents.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#76e600",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

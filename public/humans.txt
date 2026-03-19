@@ -1,0 +1,13 @@
+/* TEAM */
+Chef: Eles
+AI Developer: Antigravity
+
+/* THANKS */
+Google DeepMind
+NVIDIA Nemo Team
+
+/* SITE */
+Last update: 2026-03-19
+Standards: HTML5, CSS3, React, Vite
+Components: shadcn-ui, Tailwind CSS
+Software: NemoClaw AI Setup Kit

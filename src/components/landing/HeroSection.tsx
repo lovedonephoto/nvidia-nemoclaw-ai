@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroBg}
-          alt="AI neural network visualization"
+          alt="NVIDIA NemoClaw AI Agent Neural Network Visualization"
           className="w-full h-full object-cover opacity-40"
           loading="eager"
         />
@@ -80,7 +80,7 @@ const HeroSection = () => {
                   key={i}
                   className="inline-block h-10 w-10 rounded-full ring-2 ring-background grayscale hover:grayscale-0 transition-all duration-300"
                   src={url}
-                  alt={`User ${i}`}
+                  alt={`Verified NVIDIA NemoClaw Developer Avatar ${i + 1}`}
                 />
               ))}
               <div className="flex items-center justify-center h-10 w-10 rounded-full bg-primary/20 ring-2 ring-background backdrop-blur-sm text-[10px] font-bold text-primary">
