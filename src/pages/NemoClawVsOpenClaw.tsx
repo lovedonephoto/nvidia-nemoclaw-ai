@@ -394,6 +394,32 @@ const NemoClawVsOpenClaw = () => {
         </div>
       </section>
 
+      {/* Visible FAQ Section for Google SEO Compliance */}
+      <section className="py-24 bg-primary/[0.02]">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="font-display text-3xl font-bold">Frequently Asked Questions</h2>
+          </div>
+          <div className="max-w-3xl mx-auto space-y-4">
+            {[
+              {
+                q: "Who created OpenClaw and what happened in 2026?",
+                a: "OpenClaw was created by Peter Steinberger and was later acquired by OpenAI in February 2026 to focus on viral consumer AI agent adoption."
+              },
+              {
+                q: "What are the main differences between NemoClaw and OpenClaw?",
+                a: "NemoClaw by NVIDIA focus on enterprise security, professional deployment on NVIDIA hardware, and native Mac support, while OpenClaw targets general consumer use cases."
+              }
+            ].map((faq, i) => (
+              <div key={i} className="glass-panel p-6 rounded-2xl border-border/40">
+                <h3 className="font-bold mb-2 text-primary">{faq.q}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-32 relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10 text-center">
