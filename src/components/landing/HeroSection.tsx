@@ -44,16 +44,20 @@ const HeroSection = () => {
           </div>
         </motion.div>
 
-        <h1 className="sr-only">Nemo Claw | NVIDIA Nemo Claw AI Agents</h1>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-display font-bold tracking-tighter leading-[0.9] mb-8 max-w-7xl mx-auto"
-          aria-hidden="true"
+          className="mb-8 max-w-7xl mx-auto"
         >
-          <span className="text-gradient-primary block text-5xl sm:text-8xl lg:text-[12rem] mb-4 text-nowrap">Nemo Claw</span>
-          <span className="block text-2xl sm:text-4xl lg:text-6xl opacity-80 tracking-normal">Premium Setup Toolkit</span>
+          {/* Hidden H1 for SEO optimization */}
+          <h1 className="sr-only">NemoClaw | Install Setup Nemo Claw NVIDIA</h1>
+          
+          {/* Visual premium header hidden from screen readers but visible to users */}
+          <div aria-hidden="true" className="font-display font-bold tracking-tighter leading-[0.9]">
+            <span className="text-gradient-primary block text-5xl sm:text-7xl lg:text-9xl mb-4">NemoClaw</span>
+            <span className="block text-3xl sm:text-5xl lg:text-5xl text-foreground/90">NemoClaw Install & Setup</span>
+          </div>
         </motion.div>
 
         <motion.p
@@ -62,8 +66,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Advanced automation scripts, security templates, and hardened configurations 
-          to deploy and secure your NemoClaw AI agents with professional precision.
+          Professional automation scripts, security templates, and hardened configurations 
+          to deploy <strong>NemoClaw AI</strong> agents on <strong>Mac</strong>, Cloud, and Edge infrastructure.
         </motion.p>
 
         <motion.div

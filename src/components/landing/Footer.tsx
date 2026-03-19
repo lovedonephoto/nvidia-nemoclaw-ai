@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const footerLinks = {
   Product: ["Features", "Pricing", "Documentation"],
-  Resources: ["GitHub Repository", "Official Docs", "Contact Support"],
+  Resources: ["NemoClaw vs OpenClaw", "GitHub Repository", "Official Docs", "Contact Support"],
   Legal: ["Privacy Policy", "Terms of Service", "Refund Policy"],
 };
 
@@ -19,8 +19,9 @@ const Footer = () => {
               <span className="text-foreground"> Claw Toolkit</span>
             </Link>
             <p className="text-muted-foreground text-sm mt-3 leading-relaxed">
-              Premium Setup Toolkit and automated deployment guides for NemoClaw agents.
+              Automated deployment guides for NemoClaw agents.
             </p>
+
             <div className="mt-4 p-3 rounded-lg bg-yellow-500/10 border border-yellow-500/20">
               <p className="text-[10px] sm:text-xs text-muted-foreground leading-tight italic">
                 <strong>Disclaimer:</strong> This is an independent community project. It is NOT affiliated with, endorsed by, or representing NVIDIA Corporation.
@@ -37,6 +38,7 @@ const Footer = () => {
                   if (link === "Pricing") href = "#pricing";
                   if (link === "Documentation" || link === "Official Docs") href = "https://docs.nvidia.com/nemo-framework/user-guide/latest/index.html";
                   if (link === "GitHub Repository") href = "https://github.com/NVIDIA/NemoClaw";
+                  if (link === "NemoClaw vs OpenClaw") href = "/nemoclaw-vs-openclaw";
                   if (link === "Contact Support") href = `mailto:${supportEmail}`;
                   if (link === "Privacy Policy") href = "/privacy";
                   if (link === "Terms of Service") href = "/terms";

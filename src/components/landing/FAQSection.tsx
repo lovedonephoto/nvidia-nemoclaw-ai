@@ -10,7 +10,17 @@ const faqs = [
   {
     question: "What is this Setup Kit for NemoClaw?",
     answer:
-      "This is a premium automation toolkit designed to help developers and enterprises install, secure, and optimize NVIDIA's open-source NemoClaw platform. It provides tested scripts and security templates that reduce setup time from hours to minutes.",
+      "This is an automation toolkit designed to help developers and enterprises install, secure, and optimize NVIDIA's open-source NemoClaw platform. It provides tested scripts and security templates that reduce setup time from hours to minutes.",
+  },
+  {
+    question: "How do I install NVIDIA Nemo Claw on my Mac?",
+    answer:
+      "Our Setup Kit includes a dedicated 'NemoClaw Mac' installation script. It automates the environment setup, handles GPU acceleration dependencies (where applicable), and gets the core NemoClaw AI agents running on macOS in about 5 minutes.",
+  },
+  {
+    question: "What is the difference between NemoClaw and OpenClaw?",
+    answer:
+      "OpenClaw is the open-source base framework. NVIDIA NemoClaw is the enhanced, performance-optimized platform built on top of it. Our kit provides the professional bridge between the two, offering hardened security and faster deployment scripts than the standard GitHub NemoClaw repo.",
   },
   {
     question: "What types of data can NemoClaw process?",
@@ -25,7 +35,7 @@ const faqs = [
   {
     question: "How does the pricing work?",
     answer:
-      "We offer a single high-value 'Premium Setup Kit' for a one-time payment of $49.99. This kit includes automated installation scripts, security policy templates, and comprehensive documentation to get your AI agents running securely in minutes.",
+      "We offer a single high-value 'Setup Kit' for a one-time payment of $49.99. This kit includes automated installation scripts, security policy templates, and comprehensive documentation to get your AI agents running securely in minutes.",
   },
   {
     question: "Can I bring my own AI models to NemoClaw?",

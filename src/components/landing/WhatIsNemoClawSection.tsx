@@ -21,18 +21,19 @@ const WhatIsNemoClawSection = () => {
           className="max-w-4xl mx-auto text-center mb-16"
         >
           <h2 className="font-display text-3xl sm:text-5xl font-bold mb-6">
-            What is <span className="text-gradient-primary">Nemo Claw</span>?
+            What is <span className="text-gradient-primary">NVIDIA NemoClaw</span>?
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto mb-4">
-            NVIDIA NemoClaw is a powerful open-source AI agent platform. 
-            Our <strong>Premium Setup Toolkit</strong> empowers you to deploy this complex infrastructure 
-            seamlessly, leveraging GPU-accelerated inference and advanced neural reasoning 
-            with professional-grade automation.
+            <strong>NVIDIA NemoClaw</strong> is a powerful open-source AI agent platform. 
+            Our kit empowers you to deploy this complex infrastructure 
+            seamlessly on <strong>Mac</strong>, Linux, and Cloud environments, 
+            leveraging GPU-accelerated inference with professional-grade automation.
           </p>
+
           <p className="text-muted-foreground text-base leading-relaxed max-w-3xl mx-auto">
-            Whether you are deploying NemoClaw for autonomous research or enterprise task orchestration, 
-            our kit provides the hardened security and expert configurations needed to run 
-            on NVIDIA's cutting-edge hardware ecosystem.
+            Whether you are deploying for autonomous research or enterprise task orchestration, 
+            our kit provides the hardened security and <strong>easy installation</strong> configurations 
+            needed to run on NVIDIA's cutting-edge hardware ecosystem. 
           </p>
         </motion.div>
 
