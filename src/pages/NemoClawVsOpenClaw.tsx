@@ -57,7 +57,7 @@ const comparisonData = [
 
 const NemoClawVsOpenClaw = () => {
   useEffect(() => {
-    document.title = "NemoClaw vs OpenClaw | Professional Enterprise AI Agent Comparison";
+    document.title = "NemoClaw vs OpenClaw AI Comparison";
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", "NemoClaw vs OpenClaw: The definitive comparison. Analyze Peter Steinberger's OpenClaw history vs NVIDIA NemoClaw's enterprise features, security, and GPU performance.");
@@ -136,14 +136,64 @@ const NemoClawVsOpenClaw = () => {
               <span className="text-[10px] font-bold text-primary uppercase tracking-widest">Industry Standard Comparison</span>
             </div>
             <h1 className="font-display text-4xl sm:text-7xl font-bold mb-6 leading-tight">
-              NemoClaw <span className="text-muted-foreground/40 font-normal italic lowercase mx-2">vs</span> OpenClaw
+              NemoClaw <span className="text-muted-foreground/40 font-normal italic lowercase mx-2">vs</span> OpenClaw AI
             </h1>
             <p className="text-muted-foreground text-lg sm:text-xl max-w-3xl leading-relaxed">
-              <strong>NemoClaw</strong> and <strong>OpenClaw</strong> represent two fundamentally different approaches to AI agent technology. 
+              <strong>NemoClaw</strong> and <strong>OpenClaw AI</strong> represent two fundamentally different approaches to the autonomous agent ecosystem. 
               OpenClaw, created by Peter Steinberger and later acquired by OpenAI in February 2026, pioneered viral consumer AI agent adoption. 
-              NemoClaw, built by NVIDIA, targets the enterprise market with security, compliance, and GPU acceleration at its core.
+              NemoClaw, built by NVIDIA, targets the enterprise market with hardened security, compliance, and <strong>NVIDIA GPU</strong> acceleration.
             </p>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Evolution Timeline */}
+      <section className="py-24 relative overflow-hidden bg-primary/[0.01]">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <motion.h2 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="font-display text-2xl sm:text-4xl font-bold mb-4"
+            >
+              The Evolution of the Claw Ecosystem
+            </motion.h2>
+            <p className="text-muted-foreground text-sm uppercase tracking-widest font-bold">2026 Roadmap & Milestones</p>
+          </div>
+          
+          <div className="max-w-5xl mx-auto relative px-4">
+            <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary/0 via-primary/30 to-primary/0 hidden md:block" />
+            
+            <div className="space-y-12">
+              {[
+                { date: "Jan 2026", title: "OpenClaw Launch", desc: "Peter Steinberger releases the first version of the OpenClaw AI agent framework.", side: "left" },
+                { date: "Feb 2026", title: "OpenAI Acquisition", desc: "OpenAI acquires OpenClaw to integrate its viral agent capabilities into the GPT-5 ecosystem.", side: "right" },
+                { date: "March 2026", title: "NemoClaw Unveiled", desc: "NVIDIA announces NemoClaw at GTC, focusing on enterprise-grade security and DGX performance.", side: "left" },
+                { date: "Late 2026", title: "Ecosystem Expansion", desc: "Introduction of ZeroClaw (Rust), NanoClaw (Sandbox), and PicoClaw (Embedded).", side: "right" },
+              ].map((item, i) => (
+                <div key={i} className={`flex flex-col md:flex-row items-center gap-8 ${item.side === 'right' ? 'md:flex-row-reverse' : ''} md:mb-16 last:mb-0`}>
+                  <motion.div
+                    initial={{ opacity: 0, x: item.side === 'left' ? -30 : 30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    className={`md:w-1/2 flex flex-col items-center ${item.side === 'left' ? 'md:items-end md:text-right' : 'md:items-start md:text-left'} text-center`}
+                  >
+                    <span className="text-primary font-display font-bold text-lg mb-2">{item.date}</span>
+                    <h4 className="text-xl font-bold mb-2 text-foreground">{item.title}</h4>
+                    <p className="text-muted-foreground text-sm max-w-md">{item.desc}</p>
+                  </motion.div>
+                  
+                  <div className="hidden md:flex relative items-center justify-center shrink-0 w-12">
+                    <div className="w-4 h-4 rounded-full bg-primary shadow-[0_0_15px_rgba(159,255,108,0.5)] z-10" />
+                  </div>
+                  
+                  <div className="md:w-1/2" />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -347,6 +397,82 @@ const NemoClawVsOpenClaw = () => {
                   </div>
                 ))}
              </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the Creators Section */}
+      <section className="py-24 relative overflow-hidden bg-primary/[0.01]">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="font-display text-3xl sm:text-5xl font-bold mb-4 italic">The People Behind the Projects</h2>
+            <p className="text-muted-foreground text-sm uppercase tracking-widest font-bold">Creators & Controllers</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            <div className="glass-panel p-8 rounded-3xl border-white/5 bg-white/[0.01]">
+              <div className="flex items-center gap-6 mb-6">
+                <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-2xl font-display">PS</div>
+                <div>
+                  <h4 className="text-xl font-bold">Peter Steinberger</h4>
+                  <p className="text-primary text-xs uppercase font-bold tracking-widest">OpenClaw Creator</p>
+                </div>
+              </div>
+              <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                The original architect of the OpenClaw ecosystem. After the framework went viral in early 2026, Steinberger joined OpenAI to lead their consumer agent division.
+              </p>
+              <div className="px-3 py-1 bg-white/5 rounded-full inline-block text-[10px] text-muted-foreground">Legacy Project Status</div>
+            </div>
+
+            <div className="glass-panel p-8 rounded-3xl border-primary/20 bg-primary/5">
+              <div className="flex items-center gap-6 mb-6">
+                <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-2xl font-display">NV</div>
+                <div>
+                  <h4 className="text-xl font-bold">NVIDIA Engineering</h4>
+                  <h4 className="text-primary text-xs uppercase font-bold tracking-widest">NemoClaw Enterprise</h4>
+                </div>
+              </div>
+              <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                NVIDIA's specialized software team optimized the core Claw engine for massive parallelization on DGX and RTX hardware while adding enterprise-grade safety hooks.
+              </p>
+              <div className="px-3 py-1 bg-primary/20 rounded-full inline-block text-[10px] text-primary font-bold">Active Enterprise Support</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Advanced Hardware Ecosystem Section */}
+      <section className="py-24 relative overflow-hidden">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-16">
+            <h2 className="font-display text-3xl sm:text-5xl font-bold mb-6 italic">Built for the AI Frontier</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              While OpenClaw runs on simple clouds, <strong>NemoClaw</strong> is purpose-built to harness the elite 
+              hardware used by top AI researchers and multi-trillion dollar enterprises.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {[
+              { title: "NVIDIA DGX GH200", desc: "Enterprise scale with 144TB of shared memory for massive agent swarms.", icon: Server },
+              { title: "RTX 5090 Desktop", desc: "Local workstation acceleration for elite developers and private agents.", icon: Cpu },
+              { title: "Mac Studio M3 Ultra", desc: "Native Apple Silicon optimization for the professional macOS ecosystem.", icon: Laptop },
+            ].map((hw, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="glass-panel p-8 rounded-2xl border-border/40 hover:border-primary/30 transition-all group"
+              >
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <hw.icon className="w-6 h-6 text-primary" />
+                </div>
+                <h4 className="text-lg font-bold mb-3">{hw.title}</h4>
+                <p className="text-muted-foreground text-xs leading-relaxed">{hw.desc}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
