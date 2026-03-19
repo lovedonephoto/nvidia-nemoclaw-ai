@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Brain, Zap, Server, GitBranch } from "lucide-react";
+import CountdownTimer from "./CountdownTimer";
 
 const highlights = [
   { icon: Brain, label: "AI-Powered Agents", desc: "Autonomous AI agents that reason, plan, and execute complex tasks." },
@@ -30,11 +31,15 @@ const WhatIsNemoClawSection = () => {
             leveraging GPU-accelerated inference with professional-grade automation.
           </p>
 
-          <p className="text-muted-foreground text-base leading-relaxed max-w-3xl mx-auto">
+          <p className="text-muted-foreground text-base leading-relaxed max-w-3xl mx-auto mb-10">
             Whether you are deploying for autonomous research or enterprise task orchestration, 
             our kit provides the hardened security and <strong>easy installation</strong> configurations 
             needed to run on NVIDIA's cutting-edge hardware ecosystem. 
           </p>
+
+          <div className="flex justify-center mb-10">
+            <CountdownTimer />
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
