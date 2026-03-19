@@ -51,7 +51,7 @@ const HeroSection = () => {
         >
           <h1 className="font-display font-bold tracking-tighter leading-[0.9]">
             <span className="text-gradient-primary block text-6xl sm:text-8xl lg:text-[10rem] mb-4">NemoClaw</span>
-            <span className="sr-only">| </span>
+            <span className="sr-only"> | </span>
             <span className="block text-3xl sm:text-5xl lg:text-5xl text-foreground/90 leading-tight tracking-normal">NVIDIA Nemo Claw Install Setup AI</span>
           </h1>
         </motion.div>
