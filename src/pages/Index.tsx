@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "@/components/landing/Navbar";
 import HeroSection from "@/components/landing/HeroSection";
 import WhatIsNemoClawSection from "@/components/landing/WhatIsNemoClawSection";
@@ -17,6 +18,14 @@ import CTASection from "@/components/landing/CTASection";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => {
+  useEffect(() => {
+    document.title = "NemoClaw | Install Setup Nemo Claw NVIDIA";
+    let link = document.querySelector("link[rel='canonical']");
+    if (link) {
+      link.setAttribute("href", "https://nemoclawaiapp.com/");
+    }
+  }, []);
+
   return (
     <main className="min-h-screen bg-background text-foreground selection:bg-primary/30">
       <Navbar />
