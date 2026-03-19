@@ -37,6 +37,18 @@ export default defineConfig(({ mode }) => ({
           title = "NemoClaw OpenShell | Secure AI-Augmented Terminal Engine";
           desc = "Experience NemoClaw OpenShell: The ultimate AI-powered system terminal for NVIDIA hardware. Context-aware OS commands.";
           keywords = "NemoClaw OpenShell, AI Terminal, NVIDIA OpenShell, Secure AI Terminal";
+        } else if (url.includes('/nemoclaw-vs-openclaw')) {
+          title = "NemoClaw vs OpenClaw | Detailed AI Agent Comparison";
+          desc = "Compare NemoClaw and OpenClaw. Discover the key differences in GPU optimization, security protocols, and reasoning performance.";
+          keywords = "NemoClaw vs OpenClaw, AI Agent Comparison, NVIDIA vs OpenSource AI";
+        } else if (url.includes('/neoclaw')) {
+          title = "NeoClaw Protocol | Next-Generation AI Agent Communication";
+          desc = "Explore the NeoClaw protocol for decentralized AI agent swarms. High-bandwidth communication for multi-agent systems.";
+          keywords = "NeoClaw, AI Protocols, Distributed AI, Agent Swarms";
+        } else if (url.includes('/nvidia-nemotron-3-super')) {
+          title = "NVIDIA Nemotron 3 Super | AI Reasoning & Agentic Models";
+          desc = "Learn about the NVIDIA Nemotron 3 Super model. Mamba-Transformer architecture with 1M token context window for deep reasoning.";
+          keywords = "Nemotron 3 Super, NVIDIA Nemotron, Mamba Architecture, 1M Context Window";
         }
 
         // Clean up canonical to avoid double / with index.html

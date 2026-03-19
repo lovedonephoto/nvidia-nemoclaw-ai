@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 
 const footerLinks = {
-  Product: ["Features", "Pricing", "Documentation"],
-  Resources: ["NemoClaw vs OpenClaw", "GitHub Repository", "Official Docs", "Contact Support"],
+  Product: ["Features", "Pricing", "Documentation", "OpenShell"],
+  Guides: ["Install NemoClaw", "NemoClaw Setup", "NemoClaw vs OpenClaw"],
+  Resources: ["GitHub Repository", "Official Docs", "Contact Support"],
   Legal: ["Privacy Policy", "Terms of Service", "Refund Policy"],
 };
 
@@ -34,11 +35,14 @@ const Footer = () => {
               <ul className="space-y-2.5">
                 {links.map((link) => {
                   let href = "#";
-                  if (link === "Features") href = "#features";
-                  if (link === "Pricing") href = "#pricing";
+                  if (link === "Features") href = "/#features";
+                  if (link === "Pricing") href = "/#pricing";
                   if (link === "Documentation" || link === "Official Docs") href = "https://docs.nvidia.com/nemo-framework/user-guide/latest/index.html";
-                  if (link === "GitHub Repository") href = "https://github.com/NVIDIA/NemoClaw";
+                  if (link === "GitHub Repository") href = "https://github.com/lovedonephoto/nvidia-nemoclaw-ai";
                   if (link === "NemoClaw vs OpenClaw") href = "/nemoclaw-vs-openclaw";
+                  if (link === "Install NemoClaw") href = "/install-nemoclaw";
+                  if (link === "NemoClaw Setup") href = "/nemoclaw-setup";
+                  if (link === "OpenShell") href = "/openshell";
                   if (link === "Contact Support") href = `mailto:${supportEmail}`;
                   if (link === "Privacy Policy") href = "/privacy";
                   if (link === "Terms of Service") href = "/terms";
@@ -80,7 +84,7 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-primary transition-colors">Twitter</a>
-            <a href="https://github.com/NVIDIA/NemoClaw" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">GitHub</a>
+            <a href="https://github.com/lovedonephoto/nvidia-nemoclaw-ai" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">GitHub</a>
             <a href="#" className="hover:text-primary transition-colors">Discord</a>
             <a href="#" className="hover:text-primary transition-colors">LinkedIn</a>
           </div>
