@@ -35,7 +35,6 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <Link to="/" className="flex items-center gap-2 font-display text-xl font-bold tracking-tight">
           <span className="text-gradient-primary">NemoClaw</span>
-          <span className="text-foreground italic">Setup</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
