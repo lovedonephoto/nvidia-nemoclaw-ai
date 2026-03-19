@@ -10,6 +10,9 @@ import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsOfService from "./pages/TermsOfService.tsx";
 import NeoClaw from "./pages/NeoClaw.tsx";
 import NemotronSuper from "./pages/NemotronSuper.tsx";
+import InstallNemoClaw from "./pages/InstallNemoClaw.tsx";
+import OpenShell from "./pages/OpenShell.tsx";
+import NemoClawSetup from "./pages/NemoClawSetup.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -28,6 +31,9 @@ const App = () => (
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="/neoclaw" element={<NeoClaw />} />
           <Route path="/nvidia-nemotron-3-super" element={<NemotronSuper />} />
+          <Route path="/install-nemoclaw" element={<InstallNemoClaw />} />
+          <Route path="/openshell" element={<OpenShell />} />
+          <Route path="/nemoclaw-setup" element={<NemoClawSetup />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

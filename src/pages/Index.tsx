@@ -21,14 +21,6 @@ import GitHubSection from "@/components/landing/GitHubSection";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => {
-  useEffect(() => {
-    document.title = "NemoClaw | NVIDIA Nemo Claw Install Setup AI";
-    let link = document.querySelector("link[rel='canonical']");
-    if (link) {
-      link.setAttribute("href", "https://nemoclawaiapp.com/");
-    }
-  }, []);
-
   return (
     <main className="min-h-screen bg-background text-foreground selection:bg-primary/30">
       {/* Schema.org Structures for SEO */}
