@@ -49,14 +49,10 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mb-8 max-w-7xl mx-auto"
         >
-          {/* Hidden H1 for SEO optimization */}
-          <h1 className="sr-only">NemoClaw | Install Setup Nemo Claw NVIDIA</h1>
-          
-          {/* Visual premium header hidden from screen readers but visible to users */}
-          <div aria-hidden="true" className="font-display font-bold tracking-tighter leading-[0.9]">
-            <span className="text-gradient-primary block text-5xl sm:text-7xl lg:text-9xl mb-4">NemoClaw</span>
-            <span className="block text-3xl sm:text-5xl lg:text-5xl text-foreground/90">NemoClaw Install & Setup</span>
-          </div>
+          <h1 className="font-display font-bold tracking-tighter leading-[0.9]">
+            <span className="text-gradient-primary block text-6xl sm:text-8xl lg:text-[10rem] mb-4">NemoClaw</span>
+            <span className="block text-3xl sm:text-5xl lg:text-6xl text-foreground/90">Expert Setup & AI Agent Toolkit</span>
+          </h1>
         </motion.div>
 
         <motion.p

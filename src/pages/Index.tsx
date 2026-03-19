@@ -19,7 +19,7 @@ import Footer from "@/components/landing/Footer";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "NemoClaw | Install Setup Nemo Claw NVIDIA";
+    document.title = "NemoClaw Community: Expert NVIDIA Nemo & OpenClaw Setup Kit";
     let link = document.querySelector("link[rel='canonical']");
     if (link) {
       link.setAttribute("href", "https://nemoclawaiapp.com/");
