@@ -104,10 +104,34 @@ const NemoClawVsOpenClaw = () => {
             },
             {
               "@type": "Question",
-              "name": "What are the main differences between NemoClaw and OpenClaw?",
+              "name": "What are the main differences between NemoClaw and OpenClaw AI?",
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "NemoClaw by NVIDIA focus on enterprise security, professional deployment on NVIDIA hardware, and native Mac support, while OpenClaw targets general consumer use cases."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is NemoClaw optimized for Mac Apple Silicon?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, NVIDIA NemoClaw features a specialized setup script for Mac (M1, M2, M3 chips), allowing developers to run autonomous agents locally with full optimization."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which hardware is best for NemoClaw AI?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NemoClaw is optimized for NVIDIA DGX H100/H200, RTX 4090/5090 GPUs, and professional workstations like Mac Studio and Mac Pro."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the role of NVIDIA OpenShell in NemoClaw?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NVIDIA OpenShell provides the secure runtime and isolated sandboxing environment required to execute autonomous AI agents safely without compromising host data."
               }
             }
           ]
@@ -533,12 +557,28 @@ const NemoClawVsOpenClaw = () => {
                 a: "OpenClaw was created by Peter Steinberger and was later acquired by OpenAI in February 2026 to focus on viral consumer AI agent adoption."
               },
               {
-                q: "What are the main differences between NemoClaw and OpenClaw?",
+                q: "What are the main differences between NemoClaw and OpenClaw AI Comparison?",
                 a: "NemoClaw by NVIDIA focus on enterprise security, professional deployment on NVIDIA hardware, and native Mac support, while OpenClaw targets general consumer use cases."
+              },
+              {
+                q: "Is NemoClaw optimized for Mac Apple Silicon (M1/M2/M3)?",
+                a: "Yes, NVIDIA NemoClaw features specialized setup scripts for Mac Apple Silicon, allowing developers to run autonomous agents locally with full hardware optimization."
+              },
+              {
+                q: "Which hardware is best for NemoClaw AI deployment?",
+                a: "NemoClaw is optimized for high-end NVIDIA GPU infrastructure like DGX H100/H200 and RTX 4090/5090, as well as Mac Studio and Mac Pro workstations."
+              },
+              {
+                q: "What is the role of NVIDIA OpenShell in the ecosystem?",
+                a: "NVIDIA OpenShell provides the secure runtime and isolated sandboxing environment required to execute autonomous AI agents safely without compromising host data."
+              },
+               {
+                q: "How fast is NemoClaw installation compared to OpenClaw?",
+                a: "NemoClaw features an automated 5-minute setup script, whereas the standard OpenClaw repository often requires 2-4 hours of manual Linux and dependency configuration."
               }
             ].map((faq, i) => (
-              <div key={i} className="glass-panel p-6 rounded-2xl border-border/40">
-                <h3 className="font-bold mb-2 text-primary">{faq.q}</h3>
+              <div key={i} className="glass-panel p-6 rounded-2xl border-border/40 hover:border-primary/20 transition-all group">
+                <h3 className="font-bold mb-2 text-primary group-hover:pl-2 transition-all border-l-2 border-transparent group-hover:border-primary">{faq.q}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{faq.a}</p>
               </div>
             ))}
