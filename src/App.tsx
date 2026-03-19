@@ -8,6 +8,8 @@ import NemoClawVsOpenClaw from "./pages/NemoClawVsOpenClaw.tsx";
 import RefundPolicy from "./pages/RefundPolicy.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsOfService from "./pages/TermsOfService.tsx";
+import NeoClaw from "./pages/NeoClaw.tsx";
+import NemotronSuper from "./pages/NemotronSuper.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/refund" element={<RefundPolicy />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsOfService />} />
+          <Route path="/neoclaw" element={<NeoClaw />} />
+          <Route path="/nvidia-nemotron-3-super" element={<NemotronSuper />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

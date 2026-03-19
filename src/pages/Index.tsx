@@ -16,11 +16,13 @@ import PricingSection from "@/components/landing/PricingSection";
 import FAQSection from "@/components/landing/FAQSection";
 import CTASection from "@/components/landing/CTASection";
 import OpenShellSection from "@/components/landing/OpenShellSection";
+import NemotronFamilySection from "@/components/landing/NemotronFamilySection";
+import GitHubSection from "@/components/landing/GitHubSection";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "NemoClaw: NVIDIA Nemo Claw Install Setup AI";
+    document.title = "NemoClaw | NVIDIA Nemo Claw Install Setup AI";
     let link = document.querySelector("link[rel='canonical']");
     if (link) {
       link.setAttribute("href", "https://nemoclawaiapp.com/");
@@ -77,6 +79,8 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <WhatIsNemoClawSection />
+      <NemotronFamilySection />
+      <GitHubSection />
       <OpenShellSection />
       <InstallationStepsSection />
       <FeaturesSection />
