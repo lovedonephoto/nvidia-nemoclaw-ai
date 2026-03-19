@@ -35,7 +35,7 @@ const InstallationStepsSection = () => {
             NemoClaw <span className="text-gradient-primary">Install & Setup</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Get your AI infrastructure running in record time with our professionally optimized deployment kit.
+            Get your NVIDIA Nemo Claw <strong>Install</strong> and <strong>Setup</strong> running in record time with our professionally optimized AI deployment kit for Mac and GPU-accelerated systems.
           </p>
         </motion.div>
 
@@ -68,34 +68,74 @@ const InstallationStepsSection = () => {
           ))}
         </div>
 
-        {/* Terminal Preview */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-20 max-w-4xl mx-auto rounded-xl overflow-hidden border border-border/40 bg-[#0c0c0c] shadow-2xl"
-        >
-          <div className="bg-muted/30 px-4 py-2 flex items-center gap-2 border-b border-white/5">
-            <div className="flex gap-1.5">
-              <div className="w-2.5 h-2.5 rounded-full bg-red-500/20 text-red-500" />
-              <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/20 text-yellow-500" />
-              <div className="w-2.5 h-2.5 rounded-full bg-green-500/20 text-green-500" />
+        {/* Terminal Preview Section */}
+        <div className="mt-32 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <h2 className="font-display text-2xl sm:text-4xl font-bold mb-6">
+              Install NemoClaw and <span className="text-gradient-primary">Onboard OpenClaw Agent</span>
+            </h2>
+            <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-6">
+              Download and run the installer script. The script installs Node.js if it is not already present, then runs the guided onboard wizard to create a sandbox, configure inference, and apply security policies.
+            </p>
+            
+            <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 mb-8">
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                If you use <code className="text-primary">nvm</code> or <code className="text-primary">fnm</code> to manage Node.js, the installer may not update your current shell's PATH. If <code className="text-primary font-bold">nemoclaw</code> is not found after install, run <code className="px-1.5 py-0.5 rounded bg-green-500/10 text-green-500 border border-green-500/20 text-xs">source ~/.bashrc</code> (or <code className="px-1.5 py-0.5 rounded bg-green-500/10 text-green-500 border border-green-500/20 text-xs">source ~/.zshrc</code> for zsh) or open a new terminal.
+              </p>
             </div>
-            <span className="text-[10px] text-muted-foreground font-mono ml-2 uppercase tracking-widest">NemoClaw Setup Mac</span>
-          </div>
-          <div className="p-6 font-mono text-sm sm:text-base">
-            <div className="flex gap-3 text-primary mb-2">
-              <span>$</span>
-              <span className="text-foreground">curl -sSfL https://nemoclaw.ai/install.sh | sh</span>
+
+            <p className="text-sm font-medium text-foreground mb-4">
+              When the install completes, a summary confirms the running environment:
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="rounded-xl overflow-hidden border border-border/40 bg-[#0c0c0c] shadow-2xl"
+          >
+            <div className="bg-muted/30 px-4 py-2 flex items-center gap-2 border-b border-white/5">
+              <div className="flex gap-1.5">
+                <div className="w-2.5 h-2.5 rounded-full bg-red-500/20" />
+                <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/20" />
+                <div className="w-2.5 h-2.5 rounded-full bg-green-500/20" />
+              </div>
+              <span className="text-[10px] text-muted-foreground font-mono ml-2 uppercase tracking-widest">NemoClaw Setup</span>
             </div>
-            <div className="text-muted-foreground space-y-1">
-              <p className="text-green-500/80">[...] Detecting NVIDIA GPU... Found L40S</p>
-              <p className="text-blue-500/80">[...] Optimizing for macOS (Apple Silicon detected)</p>
-              <p className="text-white/40">[...] Installing NemoClaw Environment 1.4.2</p>
-              <p className="text-primary font-bold animate-pulse mt-2">✓ NemoClaw Ready for Deployment.</p>
+            <div className="p-6 font-mono text-sm sm:text-base whitespace-pre-wrap">
+              <div className="flex gap-3 text-primary mb-4">
+                <span>$</span>
+                <span className="text-foreground">curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash</span>
+              </div>
+              <div className="text-muted-foreground space-y-2">
+                <p className="text-white/80">______________________________________________________</p>
+                <div className="grid grid-cols-[100px_1fr] gap-4">
+                  <span className="text-white/40">Sandbox</span>
+                  <span className="text-green-500/80">my-assistant (Landlock + seccomp + netns)</span>
+                  <span className="text-white/40">Model</span>
+                  <span className="text-blue-500/80">nvidia/nemotron-3-super-120b-a12b (API)</span>
+                </div>
+                <p className="text-white/80">______________________________________________________</p>
+                <div className="grid grid-cols-[100px_1fr] gap-4">
+                  <span className="text-white/40">Run:</span>
+                  <span className="text-foreground">nemoclaw my-assistant connect</span>
+                  <span className="text-white/40">Status:</span>
+                  <span className="text-foreground">nemoclaw my-assistant status</span>
+                  <span className="text-white/40">Logs:</span>
+                  <span className="text-foreground">nemoclaw my-assistant logs --follow</span>
+                </div>
+                <p className="text-white/80">______________________________________________________</p>
+                <p className="text-primary font-bold mt-4">[INFO]  === Installation complete ===</p>
+              </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

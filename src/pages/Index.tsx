@@ -10,16 +10,17 @@ import UseCasesSection from "@/components/landing/UseCasesSection";
 import MacOptimizationSection from "@/components/landing/MacOptimizationSection";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";
 import OpenClawSection from "@/components/landing/OpenClawSection";
-import VsOpenClawHomeSection from "@/components/landing/VsOpenClawHomeSection";
+import VsTableSection from "@/components/landing/VsTableSection";
 import IntegrationsSection from "@/components/landing/IntegrationsSection";
 import PricingSection from "@/components/landing/PricingSection";
 import FAQSection from "@/components/landing/FAQSection";
 import CTASection from "@/components/landing/CTASection";
+import OpenShellSection from "@/components/landing/OpenShellSection";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "NemoClaw: NVIDIA Nemo Claw Install Setup";
+    document.title = "NemoClaw: NVIDIA Nemo Claw Install Setup AI";
     let link = document.querySelector("link[rel='canonical']");
     if (link) {
       link.setAttribute("href", "https://nemoclawaiapp.com/");
@@ -76,6 +77,7 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <WhatIsNemoClawSection />
+      <OpenShellSection />
       <InstallationStepsSection />
       <FeaturesSection />
       <NemoClawAISection />
@@ -84,7 +86,7 @@ const Index = () => {
       <MacOptimizationSection />
       <HowItWorksSection />
       <OpenClawSection />
-      <VsOpenClawHomeSection />
+      <VsTableSection />
       <IntegrationsSection />
       <PricingSection />
       <FAQSection />
