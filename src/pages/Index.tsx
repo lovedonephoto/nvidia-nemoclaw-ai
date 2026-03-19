@@ -4,6 +4,7 @@ import WhatIsNemoClawSection from "@/components/landing/WhatIsNemoClawSection";
 import InstallationStepsSection from "@/components/landing/InstallationStepsSection";
 import FeaturesSection from "@/components/landing/FeaturesSection";
 import NemoClawAISection from "@/components/landing/NemoClawAISection";
+import NemoClawInstallSection from "@/components/landing/NemoClawInstallSection";
 import UseCasesSection from "@/components/landing/UseCasesSection";
 import MacOptimizationSection from "@/components/landing/MacOptimizationSection";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";
@@ -24,6 +25,7 @@ const Index = () => {
       <InstallationStepsSection />
       <FeaturesSection />
       <NemoClawAISection />
+      <NemoClawInstallSection />
       <UseCasesSection />
       <MacOptimizationSection />
       <HowItWorksSection />

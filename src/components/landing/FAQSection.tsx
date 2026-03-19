@@ -8,44 +8,49 @@ import {
 
 const faqs = [
   {
-    question: "What is this Setup Kit for NemoClaw?",
+    question: "What is NemoClaw and how does NVIDIA Nemo Claw work?",
     answer:
-      "This is an automation toolkit designed to help developers and enterprises install, secure, and optimize NVIDIA's open-source NemoClaw platform. It provides tested scripts and security templates that reduce setup time from hours to minutes.",
+      "NemoClaw (also known as NVIDIA Nemo Claw) is a GPU-accelerated AI agent platform built on NVIDIA Nemo. It deploys autonomous AI agents that reason, plan, and execute complex tasks using neural networks optimized for NVIDIA hardware.",
   },
   {
     question: "How do I install NVIDIA Nemo Claw on my Mac?",
     answer:
-      "Our Setup Kit includes a dedicated 'NemoClaw Mac' installation script. It automates the environment setup, handles GPU acceleration dependencies (where applicable), and gets the core NemoClaw AI agents running on macOS in about 5 minutes.",
+      "Our Setup Kit includes a dedicated 'NemoClaw Mac' installation script. It automates the environment setup for Apple Silicon (M1/M2/M3), handles GPU acceleration dependencies, and gets the core NemoClaw AI agents running on macOS in about 5 minutes.",
+  },
+  {
+    question: "How do I install NemoClaw on Ubuntu or Docker?",
+    answer:
+      "The Premium Setup Kit provides one-command installation scripts for Ubuntu and pre-built Docker images. The toolkit automates CUDA driver setup, dependency resolution, and service configuration across all platforms.",
   },
   {
     question: "What is the difference between NemoClaw and OpenClaw?",
     answer:
-      "OpenClaw is the open-source base framework. NVIDIA NemoClaw is the enhanced, performance-optimized platform built on top of it. Our kit provides the professional bridge between the two, offering hardened security and faster deployment scripts than the standard GitHub NemoClaw repo.",
+      "OpenClaw is the open-source foundation. NemoClaw extends it with enterprise security, automated install scripts, ClawBot drag-and-drop builder, NVIDIA Nemotron integration, and professional deployment templates powered by our setup kit.",
   },
   {
-    question: "What types of data can NemoClaw process?",
+    question: "What is OpenClaw AI and the Open Claw GitHub project?",
     answer:
-      "NemoClaw supports a wide range of data types including structured databases, unstructured text, images, audio streams, real-time API feeds, and cloud storage. Our multi-model orchestration allows you to combine different AI models for complex, multi-modal workflows.",
+      "Open Claw is the official open-source community project on GitHub. OpenClaw AI provides the core framework for building custom AI agents, with 12K+ GitHub stars and 200+ community plugins powering the ecosystem.",
   },
   {
-    question: "Is this toolkit suitable for production use?",
+    question: "What is NemoClaw ClawBot?",
     answer:
-      "Yes. Our templates include zero-trust architecture recommendations and sandbox configurations specifically designed to help you secure NemoClaw agents in professional environments.",
+      "NemoClaw ClawBot is the bot-building framework that enables developers to create intelligent bots and autonomous AI agents with drag-and-drop tools — no deep ML expertise required. It runs on NVIDIA GPU infrastructure for real-time inference.",
   },
   {
-    question: "How does the pricing work?",
+    question: "What is NanoClaw and how does it relate to NemoClaw?",
     answer:
-      "We offer a single high-value 'Setup Kit' for a one-time payment of $49.99. This kit includes automated installation scripts, security policy templates, and comprehensive documentation to get your AI agents running securely in minutes.",
+      "NanoClaw is the lightweight edge runtime for NemoClaw, designed for IoT devices, NVIDIA Jetson, and resource-constrained environments. It brings NemoClaw AI agent capabilities to edge computing with optimized inference.",
   },
   {
-    question: "Can I bring my own AI models to NemoClaw?",
+    question: "Can I use NemoClaw with NVIDIA Nemotron models?",
     answer:
-      "Yes. NemoClaw supports bring-your-own-model (BYOM) workflows. You can upload custom models, fine-tune pre-trained models with your own data, and deploy them alongside our built-in models — all through a simple API or web interface.",
+      "Yes. NemoClaw has native integration with NVIDIA Nemotron models for enhanced reasoning and language understanding. You can also bring your own models (BYOM) and deploy them alongside built-in models.",
   },
   {
-    question: "What kind of support does NemoClaw offer?",
+    question: "How does NemoClaw pricing work?",
     answer:
-      "Starter users get access to community support and documentation. Pro users receive priority email and chat support. Enterprise customers get 24/7 dedicated support with SLA guarantees, a dedicated success manager, and custom onboarding.",
+      "We offer a Premium Setup Kit for a one-time payment of $49.99, including automated installation scripts, security templates, and expert documentation to get your AI agents running securely in minutes.",
   },
 ];
 

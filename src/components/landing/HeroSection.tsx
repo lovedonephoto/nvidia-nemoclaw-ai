@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Zap, Star } from "lucide-react";
-import { useState, useEffect } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
