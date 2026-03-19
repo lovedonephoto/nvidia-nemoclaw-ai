@@ -28,6 +28,51 @@ const Index = () => {
 
   return (
     <main className="min-h-screen bg-background text-foreground selection:bg-primary/30">
+      {/* Schema.org Structures for SEO */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "datePublished": "2025-01-15",
+          "dateModified": "2026-03-19",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is NemoClaw and how does NVIDIA Nemo Claw work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NemoClaw (also known as NVIDIA Nemo Claw) is a GPU-accelerated AI agent platform built on NVIDIA Nemo. It deploys autonomous AI agents that reason, plan, and execute complex tasks using neural networks optimized for NVIDIA hardware."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I install NVIDIA Nemo Claw on my Mac?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our Setup Kit includes a dedicated 'NemoClaw Mac' installation script for Apple Silicon (M1/M2/M3), handling GPU acceleration automatically for macOS."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between NemoClaw and OpenClaw?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NemoClaw extends OpenClaw with enterprise security, automated install scripts, NVIDIA Nemotron integration, and professional deployment templates powered by our setup kit."
+              }
+            }
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nemoclawaiapp.com/" }
+          ]
+        })}
+      </script>
       <Navbar />
       <HeroSection />
       <WhatIsNemoClawSection />
