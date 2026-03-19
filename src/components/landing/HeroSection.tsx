@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Zap, Star } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
   const avatars = [
@@ -34,13 +35,15 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          className="flex flex-col items-center gap-6 mb-10"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 mb-2">
             <Zap className="w-3.5 h-3.5 text-primary" />
             <span className="text-xs font-medium text-primary tracking-wide uppercase">
               Community Edition Setup Kit
             </span>
           </div>
+          <CountdownTimer />
         </motion.div>
 
         <motion.div
