@@ -77,6 +77,10 @@ export default defineConfig(({ mode }) => ({
           title = "IronClaw AI | install Iron Claw Github, Skills, Docker";
           desc = "Install IronClaw AI agent. Get the official Iron Claw Github code, specialized AI skills, and Docker setup guide for security-hardened autonomous runs.";
           keywords = "IronClaw, Secure AI, Hardened Agent, AI Firewall, Security Automation";
+        } else if (url.includes('/researchclaw')) {
+          title = "ResearchClaw AI | install Research Claw Github, Skills, Docker";
+          desc = "Install ResearchClaw AI agent. Get the official Research Claw Github code, specialized AI skills, and Docker setup guide for automated deep-dive research runs.";
+          keywords = "ResearchClaw, Auto Research Agent, Web Research AI, Content Synthesis, Autonomous Researcher";
         }
 
         // Clean up canonical to avoid double / with index.html

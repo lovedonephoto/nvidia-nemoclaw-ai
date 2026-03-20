@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import { Bot, Cpu, Zap, Shield, ChevronRight, ArrowUpRight, CheckCircle2, MessageSquare, Gauge, Layers, Terminal, ShieldAlert } from "lucide-react";
+import { Bot, Cpu, Zap, Shield, ChevronRight, ArrowUpRight, CheckCircle2, MessageSquare, Gauge, Layers, Terminal, ShieldAlert, Search } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/landing/Navbar";
 import Footer from "@/components/landing/Footer";
@@ -93,13 +93,22 @@ const AiAgents = () => {
       features: ["Vulnerability auditing", "Secure enclave ready", "Real-time threat monitoring", "Hardened firewalling"],
       icon: ShieldAlert,
       color: "text-red-500"
+    },
+    {
+      name: "ResearchClaw",
+      id: "researchclaw",
+      tag: "Autonomous Intelligence Expert",
+      description: "Specialized in deep-dive web research and information synthesis. ResearchClaw navigates complex datasets to deliver structured reports and verified insights.",
+      features: ["Multi-hop search", "Source verification", "Automatic synthesis", "Deep-dive reporting"],
+      icon: Search,
+      color: "text-amber-400"
     }
   ];
 
   const faqs = [
     {
       q: "What is the NemoClaw AI Agents Ecosystem?",
-      a: "The NemoClaw AI Agents Ecosystem is a collection of specialized autonomous agents (Pico, Zero, Kimi, OpenClaw, Tiny, Iron) optimized for different hardware and reasoning requirements within the NVIDIA Nemo infrastructure."
+      a: "The NemoClaw AI Agents Ecosystem is a collection of specialized autonomous agents (Pico, Zero, Kimi, OpenClaw, Tiny, Iron, Research) optimized for different hardware and reasoning requirements within the NVIDIA Nemo infrastructure."
     },
     {
       q: "How do I choose between PicoClaw and KimiClaw?",
