@@ -24,7 +24,7 @@ const Brain = () => (
 
 const AiAgents = () => {
   useEffect(() => {
-    const pageTitle = "NemoClaw AI Agents Ecosystem: PicoClaw, ZeroClaw, KimiClaw & OpenClaw Specialized AI Deployment Guide";
+    const pageTitle = "NemoClaw AI Agents Ecosystem Deployment Guide";
     const pageDesc = "Discover the NemoClaw AI Agents Ecosystem. Deploy specialized PicoClaw, ZeroClaw, KimiClaw, and OpenClaw agents for your enterprise AI infrastructure today.";
     
     document.title = pageTitle;
@@ -138,8 +138,8 @@ const AiAgents = () => {
               <Bot className="w-3 h-3 text-primary animate-pulse" />
               <span className="text-[10px] font-bold text-primary uppercase tracking-widest">Autonomous Ecosystem</span>
             </div>
-            <h1 className="font-display text-4xl sm:text-7xl font-bold mb-8 leading-tight tracking-tighter">
-              NemoClaw <span className="text-gradient-primary">AI Agents</span> Ecosystem: PicoClaw, ZeroClaw, KimiClaw & OpenClaw Specialized AI Deployment Guide
+            <h1 className="font-display text-4xl sm:text-7xl font-bold mb-8 leading-tight tracking-tighter text-balance">
+              NemoClaw <span className="text-gradient-primary">AI Agents</span> Ecosystem Deployment Guide
             </h1>
             <p className="text-muted-foreground text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed">
               Deploy specialized autonomous agents tailored for every use case—from low-power local processing to multi-node enterprise reasoning.

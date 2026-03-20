@@ -7,7 +7,7 @@ import Footer from "@/components/landing/Footer";
 
 const PicoClaw = () => {
   useEffect(() => {
-    const pageTitle = "PicoClaw AI Agent: Ultra-Fast Lightweight Autonomous Edge Deployment Guide";
+    const pageTitle = "PicoClaw: Ultra-Fast Lightweight Autonomous Edge Agent";
     const pageDesc = "Deploy PicoClaw, the ultra-fast lightweight AI agent. Sub-millisecond reasoning for edge devices and mobile hardware. Optimized for Apple Silicon M4.";
     
     document.title = pageTitle;
@@ -79,7 +79,7 @@ const PicoClaw = () => {
                   <Zap className="w-8 h-8" />
                </div>
                <h1 className="font-display text-4xl sm:text-6xl font-bold leading-tight">
-                  PicoClaw AI Agent: Ultra-Fast Lightweight Autonomous Edge Deployment Guide
+                  PicoClaw: Ultra-Fast Lightweight Autonomous Edge Agent
                </h1>
             </div>
             <p className="text-xl text-muted-foreground mb-10 max-w-3xl leading-relaxed">

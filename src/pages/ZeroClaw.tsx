@@ -7,7 +7,7 @@ import Footer from "@/components/landing/Footer";
 
 const ZeroClaw = () => {
   useEffect(() => {
-    const pageTitle = "ZeroClaw AI Agent: Minimalist Zero-Configuration Autonomous Serverless Deployment Guide";
+    const pageTitle = "ZeroClaw: Minimalist Zero-Configuration Serverless Agent";
     const pageDesc = "Deploy ZeroClaw, the minimalist zero-configuration AI agent. Hardened security, auto-GPU mapping, and serverless ready for enterprise clusters today.";
     
     document.title = pageTitle;
@@ -79,7 +79,7 @@ const ZeroClaw = () => {
                   <Shield className="w-8 h-8" />
                </div>
                <h1 className="font-display text-4xl sm:text-6xl font-bold leading-tight">
-                  ZeroClaw AI Agent: Minimalist Zero-Configuration Autonomous Serverless Deployment Guide
+                  ZeroClaw: Minimalist Zero-Configuration Serverless Agent
                </h1>
             </div>
             <p className="text-xl text-muted-foreground mb-10 max-w-3xl leading-relaxed">
