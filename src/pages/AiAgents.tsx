@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { Bot, Cpu, Zap, Shield, ChevronRight, ArrowUpRight, CheckCircle2, MessageSquare, Gauge, Layers, Terminal } from "lucide-react";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/landing/Navbar";
 import Footer from "@/components/landing/Footer";
 
@@ -183,10 +184,13 @@ const AiAgents = () => {
                   ))}
                 </div>
 
-                <div className="flex items-center justify-between pt-6 border-t border-border/20 cursor-pointer group-hover:text-primary transition-colors">
+                <Link 
+                  to={`/${agent.id}`}
+                  className="flex items-center justify-between pt-6 border-t border-border/20 cursor-pointer group-hover:text-primary transition-colors"
+                >
                   <span className="font-bold text-sm uppercase tracking-tighter">Learn more about {agent.name}</span>
                   <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-                </div>
+                </Link>
               </motion.div>
             ))}
           </div>

@@ -53,6 +53,22 @@ export default defineConfig(({ mode }) => ({
           title = "NemoClaw AI Agents Ecosystem: PicoClaw, ZeroClaw, KimiClaw & OpenClaw Specialized AI Deployment Guide";
           desc = "Discover the NemoClaw AI Agents Ecosystem. Deploy specialized PicoClaw, ZeroClaw, KimiClaw, and OpenClaw agents for your enterprise AI infrastructure today.";
           keywords = "PicoClaw, ZeroClaw, KimiClaw, OpenClaw, AI Agents, NemoClaw Deployment, Autonomous Agents";
+        } else if (url.includes('/picoclaw')) {
+          title = "PicoClaw AI Agent: Ultra-Fast Lightweight Autonomous Edge Deployment Guide";
+          desc = "Deploy PicoClaw, the ultra-fast lightweight AI agent. Sub-millisecond reasoning for edge devices and mobile hardware. Optimized for Apple Silicon M4.";
+          keywords = "PicoClaw, Edge AI, Lightweight Agent, NVIDIA Nemo, Mobile AI Deployment";
+        } else if (url.includes('/zeroclaw')) {
+          title = "ZeroClaw AI Agent: Minimalist Zero-Configuration Autonomous Serverless Deployment Guide";
+          desc = "Deploy ZeroClaw, the minimalist zero-configuration AI agent. Hardened security, auto-GPU mapping, and serverless ready for enterprise clusters today.";
+          keywords = "ZeroClaw, Zero-Config AI, Serverless Agents, Docker AI, Secure Autonomous Agent";
+        } else if (url.includes('/kimiclaw')) {
+          title = "KimiClaw AI Agent: Advanced 1M Context Reasoning and Strategic Decision-Making Guide";
+          desc = "Deploy KimiClaw, the advanced reasoning AI agent with 1M token context window. Specialized for multi-step planning and deep logical analysis tasks.";
+          keywords = "KimiClaw, Deep Reasoning Agent, 1M Context Window, Strategic AI, Multi-step Planning";
+        } else if (url.includes('/openclaw')) {
+          title = "OpenClaw AI Agent: Flexible Open-Source Multi-LLM Autonomous Research Deployment Guide";
+          desc = "Deploy OpenClaw, the flexible open-source AI agent. Multi-LLM support, plug-and-play modules, and community templates for research and development.";
+          keywords = "OpenClaw, Open Source AI, Multi-LLM, AI Research, Plug-and-play Agents";
         }
 
         // Clean up canonical to avoid double / with index.html
