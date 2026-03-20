@@ -1,4 +1,4 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"; // Force re-index
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
@@ -45,8 +45,8 @@ const App = () => (
           <Route path="/zeroclaw" element={<ZeroClaw />} />
           <Route path="/kimiclaw" element={<KimiClaw />} />
           <Route path="/openclaw" element={<OpenClaw />} />
-        <Route path="/tinyclaw" element={<TinyClaw />} />
-        <Route path="/ironclaw" element={<IronClaw />} />
+          <Route path="/tinyclaw" element={<TinyClaw />} />
+          <Route path="/ironclaw" element={<IronClaw />} />
           <Route path="/nemoclaw-setup" element={<NemoClawSetup />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
