@@ -81,6 +81,10 @@ export default defineConfig(({ mode }) => ({
           title = "ResearchClaw AI | install Research Claw Github, Skills, Docker";
           desc = "Install ResearchClaw AI agent. Get the official Research Claw Github code, specialized AI skills, and Docker setup guide for automated deep-dive research runs.";
           keywords = "ResearchClaw, Auto Research Agent, Web Research AI, Content Synthesis, Autonomous Researcher";
+        } else if (url.includes('/mimoclaw')) {
+          title = "MimoClaw AI | install Mimo Claw Github, Skills, Docker";
+          desc = "Install MimoClaw AI agent. Get the official Mimo Claw Github code, specialized AI skills, and Docker setup guide for multimedia and multimodal AI workflows.";
+          keywords = "MimoClaw, Multimodal AI, Multimedia Agent, Video Analysis AI, Audio Synthesis Agent";
         }
 
         // Clean up canonical to avoid double / with index.html

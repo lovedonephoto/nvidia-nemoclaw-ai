@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import { Bot, Cpu, Zap, Shield, ChevronRight, ArrowUpRight, CheckCircle2, MessageSquare, Gauge, Layers, Terminal, ShieldAlert, Search } from "lucide-react";
+import { Bot, Cpu, Zap, Shield, ChevronRight, ArrowUpRight, CheckCircle2, MessageSquare, Gauge, Layers, Terminal, ShieldAlert, Search, Video } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/landing/Navbar";
 import Footer from "@/components/landing/Footer";
@@ -102,13 +102,22 @@ const AiAgents = () => {
       features: ["Multi-hop search", "Source verification", "Automatic synthesis", "Deep-dive reporting"],
       icon: Search,
       color: "text-amber-400"
+    },
+    {
+      name: "MimoClaw",
+      id: "mimoclaw",
+      tag: "Multimedia & Multimodal Guru",
+      description: "A specialist in visual and auditory data. MimoClaw processes video streams, generates realistic audio, and understands complex multimodal prompts with ease.",
+      features: ["Video stream analysis", "High-fidelity synthesis", "Emotion detection", "Intermodal reasoning"],
+      icon: Video,
+      color: "text-pink-500"
     }
   ];
 
   const faqs = [
     {
       q: "What is the NemoClaw AI Agents Ecosystem?",
-      a: "The NemoClaw AI Agents Ecosystem is a collection of specialized autonomous agents (Pico, Zero, Kimi, OpenClaw, Tiny, Iron, Research) optimized for different hardware and reasoning requirements within the NVIDIA Nemo infrastructure."
+      a: "The NemoClaw AI Agents Ecosystem is a collection of specialized autonomous agents (Pico, Zero, Kimi, OpenClaw, Tiny, Iron, Research, Mimo) optimized for different hardware and reasoning requirements within the NVIDIA Nemo infrastructure."
     },
     {
       q: "How do I choose between PicoClaw and KimiClaw?",
