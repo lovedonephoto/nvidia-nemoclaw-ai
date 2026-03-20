@@ -7,7 +7,7 @@ import Footer from "@/components/landing/Footer";
 
 const OpenClaw = () => {
   useEffect(() => {
-    const pageTitle = "OpenClaw: Flexible Open-Source Multi-LLM Research Agent";
+    const pageTitle = "OpenClaw AI | install Open Claw Github, Skills, Docker";
     const pageDesc = "Deploy OpenClaw, the flexible open-source AI agent. Multi-LLM support, plug-and-play modules, and community templates for research and development.";
     
     document.title = pageTitle;
@@ -78,8 +78,8 @@ const OpenClaw = () => {
                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
                   <Layers className="w-8 h-8" />
                </div>
-               <h1 className="font-display text-4xl sm:text-6xl font-bold leading-tight">
-                  OpenClaw: Flexible Open-Source Multi-LLM Research Agent
+               <h1 className="font-display text-4xl sm:text-7xl font-bold leading-tight tracking-tighter mb-6">
+                  OpenClaw AI | <span className="text-gradient-primary">install Open Claw</span> Github, Skills, Docker
                </h1>
             </div>
             <p className="text-xl text-muted-foreground mb-10 max-w-3xl leading-relaxed">

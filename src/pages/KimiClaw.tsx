@@ -7,7 +7,7 @@ import Footer from "@/components/landing/Footer";
 
 const KimiClaw = () => {
   useEffect(() => {
-    const pageTitle = "KimiClaw: Advanced 1M Context Reasoning AI Agent";
+    const pageTitle = "KimiClaw AI | install Kimi Claw Github, Skills, Docker";
     const pageDesc = "Deploy KimiClaw, the advanced reasoning AI agent with 1M token context window. Specialized for multi-step planning and deep logical analysis tasks.";
     
     document.title = pageTitle;
@@ -95,8 +95,8 @@ const KimiClaw = () => {
                <div className="w-16 h-16 rounded-2xl bg-purple-500/10 flex items-center justify-center text-purple-400">
                   <Brain />
                </div>
-               <h1 className="font-display text-4xl sm:text-6xl font-bold leading-tight">
-                  KimiClaw: Advanced 1M Context Reasoning AI Agent
+               <h1 className="font-display text-4xl sm:text-7xl font-bold leading-tight tracking-tighter mb-6">
+                  KimiClaw AI | <span className="text-gradient-primary">install Kimi Claw</span> Github, Skills, Docker
                </h1>
             </div>
             <p className="text-xl text-muted-foreground mb-10 max-w-3xl leading-relaxed">

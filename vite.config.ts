@@ -54,19 +54,19 @@ export default defineConfig(({ mode }) => ({
           desc = "Discover the NemoClaw AI Agents Ecosystem. Deploy specialized PicoClaw, ZeroClaw, KimiClaw, and OpenClaw agents for your enterprise AI infrastructure today.";
           keywords = "PicoClaw, ZeroClaw, KimiClaw, OpenClaw, AI Agents, NemoClaw Deployment, Autonomous Agents";
         } else if (url.includes('/picoclaw')) {
-          title = "PicoClaw: Ultra-Fast Lightweight Autonomous Edge Agent";
+          title = "PicoClaw AI | install Pico Claw Github, Skills, Docker";
           desc = "Deploy PicoClaw, the ultra-fast lightweight AI agent. Sub-millisecond reasoning for edge devices and mobile hardware. Optimized for Apple Silicon M4.";
           keywords = "PicoClaw, Edge AI, Lightweight Agent, NVIDIA Nemo, Mobile AI Deployment";
         } else if (url.includes('/zeroclaw')) {
-          title = "ZeroClaw: Minimalist Zero-Configuration Serverless Agent";
+          title = "ZeroClaw AI | install Zero Claw Github, Skills, Docker";
           desc = "Deploy ZeroClaw, the minimalist zero-configuration AI agent. Hardened security, auto-GPU mapping, and serverless ready for enterprise clusters today.";
           keywords = "ZeroClaw, Zero-Config AI, Serverless Agents, Docker AI, Secure Autonomous Agent";
         } else if (url.includes('/kimiclaw')) {
-          title = "KimiClaw: Advanced 1M Context Reasoning AI Agent";
+          title = "KimiClaw AI | install Kimi Claw Github, Skills, Docker";
           desc = "Deploy KimiClaw, the advanced reasoning AI agent with 1M token context window. Specialized for multi-step planning and deep logical analysis tasks.";
           keywords = "KimiClaw, Deep Reasoning Agent, 1M Context Window, Strategic AI, Multi-step Planning";
         } else if (url.includes('/openclaw')) {
-          title = "OpenClaw: Flexible Open-Source Multi-LLM Research Agent";
+          title = "OpenClaw AI | install Open Claw Github, Skills, Docker";
           desc = "Deploy OpenClaw, the flexible open-source AI agent. Multi-LLM support, plug-and-play modules, and community templates for research and development.";
           keywords = "OpenClaw, Open Source AI, Multi-LLM, AI Research, Plug-and-play Agents";
         }
