@@ -69,6 +69,14 @@ export default defineConfig(({ mode }) => ({
           title = "OpenClaw AI | install Open Claw Github, Skills, Docker";
           desc = "Install OpenClaw AI agent. Get the official Open Claw Github code, specialized AI skills, and Docker setup guide for flexible open-source AI research runs.";
           keywords = "OpenClaw, Open Source AI, Multi-LLM, AI Research, Plug-and-play Agents";
+        } else if (url.includes('/tinyclaw')) {
+          title = "TinyClaw AI | install Tiny Claw Github, Skills, Docker";
+          desc = "Install TinyClaw AI agent. Get the official Tiny Claw Github code, specialized AI skills, and Docker setup guide for embedded nano-agent deployment.";
+          keywords = "TinyClaw, Nano Agent, Embedded AI, IoT Agents, Low Power AI";
+        } else if (url.includes('/ironclaw')) {
+          title = "IronClaw AI | install Iron Claw Github, Skills, Docker";
+          desc = "Install IronClaw AI agent. Get the official Iron Claw Github code, specialized AI skills, and Docker setup guide for security-hardened autonomous runs.";
+          keywords = "IronClaw, Secure AI, Hardened Agent, AI Firewall, Security Automation";
         }
 
         // Clean up canonical to avoid double / with index.html

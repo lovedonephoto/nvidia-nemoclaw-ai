@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import { Bot, Cpu, Zap, Shield, ChevronRight, ArrowUpRight, CheckCircle2, MessageSquare, Gauge, Layers, Terminal } from "lucide-react";
+import { Bot, Cpu, Zap, Shield, ChevronRight, ArrowUpRight, CheckCircle2, MessageSquare, Gauge, Layers, Terminal, ShieldAlert } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/landing/Navbar";
 import Footer from "@/components/landing/Footer";
@@ -75,13 +75,31 @@ const AiAgents = () => {
       features: ["Open-source weights", "Plug-and-play modules", "Community templates", "Multi-LLM support"],
       icon: Layers,
       color: "text-primary"
+    },
+    {
+      name: "TinyClaw",
+      id: "tinyclaw",
+      tag: "Nano-Agent Architecture",
+      description: "Optimized for embedded systems and ultra-low power environments, TinyClaw delivers smart reasoning where memory is a luxury and efficiency is everything.",
+      features: ["Embedded optimizations", "MCU compatible core", "Minimal energy usage", "TinyML integration"],
+      icon: Cpu,
+      color: "text-cyan-400"
+    },
+    {
+      name: "IronClaw",
+      id: "ironclaw",
+      tag: "Security-Hardened Defender",
+      description: "The ultimate security-first agent. IronClaw is built with multi-layered adversarial defense systems to handle highly sensitive enterprise data safely.",
+      features: ["Vulnerability auditing", "Secure enclave ready", "Real-time threat monitoring", "Hardened firewalling"],
+      icon: ShieldAlert,
+      color: "text-red-500"
     }
   ];
 
   const faqs = [
     {
       q: "What is the NemoClaw AI Agents Ecosystem?",
-      a: "The NemoClaw AI Agents Ecosystem is a collection of specialized autonomous agents (Pico, Zero, Kimi, OpenClaw) optimized for different hardware and reasoning requirements within the NVIDIA Nemo infrastructure."
+      a: "The NemoClaw AI Agents Ecosystem is a collection of specialized autonomous agents (Pico, Zero, Kimi, OpenClaw, Tiny, Iron) optimized for different hardware and reasoning requirements within the NVIDIA Nemo infrastructure."
     },
     {
       q: "How do I choose between PicoClaw and KimiClaw?",

@@ -17,6 +17,8 @@ import PicoClaw from "./pages/PicoClaw";
 import ZeroClaw from "./pages/ZeroClaw";
 import KimiClaw from "./pages/KimiClaw";
 import OpenClaw from "./pages/OpenClaw";
+import TinyClaw from "./pages/TinyClaw";
+import IronClaw from "./pages/IronClaw";
 import NemoClawSetup from "./pages/NemoClawSetup";
 import NotFound from "./pages/NotFound";
 
@@ -43,6 +45,8 @@ const App = () => (
           <Route path="/zeroclaw" element={<ZeroClaw />} />
           <Route path="/kimiclaw" element={<KimiClaw />} />
           <Route path="/openclaw" element={<OpenClaw />} />
+        <Route path="/tinyclaw" element={<TinyClaw />} />
+        <Route path="/ironclaw" element={<IronClaw />} />
           <Route path="/nemoclaw-setup" element={<NemoClawSetup />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
