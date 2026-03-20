@@ -21,8 +21,8 @@ export default defineConfig(({ mode }) => ({
         // Use originalUrl if available, otherwise fallback to path
         const url = ctx.originalUrl || ctx.path || '/';
         
-        let title = "NemoClaw | NVIDIA Nemo Claw Install Setup AI";
-        let desc = "Professional setup and installation for NVIDIA Nemo Claw. Install NemoClaw, deploy OpenClaw AI agents, GPU accelerated infrastructure.";
+        let title = "Nemo Claw AI | NVIDIA NemoClaw Install Setup";
+        let desc = "Nemo Claw AI: Install NVIDIA NemoClaw with our setup guide. Compare NemoClaw vs OpenClaw & OpenShell. Get the latest code via our GitHub repository.";
         let keywords = "NemoClaw, NVIDIA NemoClaw, Nemo Claw, NVIDIA Nemo Claw, OpenClaw, Open Claw, NemoClaw AI, NemoClaw install, NemoClaw setup, AI agents, GPU accelerated, NVIDIA Nemo";
 
         if (url.includes('/install-nemoclaw')) {
