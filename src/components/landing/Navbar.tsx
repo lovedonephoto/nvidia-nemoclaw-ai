@@ -16,6 +16,7 @@ const nemoClawLinks = [
   { label: "OpenShell", href: "/openshell" },
   { label: "Nemotron 3 Super", href: "/nvidia-nemotron-3-super" },
   { label: "NeoClaw Protocol", href: "/neoclaw" },
+  { label: "AI Agents Ecosystem", href: "/ai-agents" },
   { label: "NemoClaw vs OpenClaw", href: "/nemoclaw-vs-openclaw" },
 ];
 

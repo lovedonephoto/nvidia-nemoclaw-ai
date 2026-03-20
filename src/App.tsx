@@ -12,6 +12,7 @@ import NeoClaw from "./pages/NeoClaw.tsx";
 import NemotronSuper from "./pages/NemotronSuper.tsx";
 import InstallNemoClaw from "./pages/InstallNemoClaw.tsx";
 import OpenShell from "./pages/OpenShell.tsx";
+import AiAgents from "./pages/AiAgents.tsx";
 import NemoClawSetup from "./pages/NemoClawSetup.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/nvidia-nemotron-3-super" element={<NemotronSuper />} />
           <Route path="/install-nemoclaw" element={<InstallNemoClaw />} />
           <Route path="/openshell" element={<OpenShell />} />
+          <Route path="/ai-agents" element={<AiAgents />} />
           <Route path="/nemoclaw-setup" element={<NemoClawSetup />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

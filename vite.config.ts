@@ -49,6 +49,10 @@ export default defineConfig(({ mode }) => ({
           title = "NVIDIA Nemotron 3 Super | AI Reasoning & Agentic Models";
           desc = "Learn about the NVIDIA Nemotron 3 Super model. Mamba-Transformer architecture with 1M token context window for deep reasoning.";
           keywords = "Nemotron 3 Super, NVIDIA Nemotron, Mamba Architecture, 1M Context Window";
+        } else if (url.includes('/ai-agents')) {
+          title = "NemoClaw AI Agents Ecosystem: PicoClaw, ZeroClaw, KimiClaw & OpenClaw Specialized AI Deployment Guide";
+          desc = "Discover the NemoClaw AI Agents Ecosystem. Deploy specialized PicoClaw, ZeroClaw, KimiClaw, and OpenClaw agents for your enterprise AI infrastructure today.";
+          keywords = "PicoClaw, ZeroClaw, KimiClaw, OpenClaw, AI Agents, NemoClaw Deployment, Autonomous Agents";
         }
 
         // Clean up canonical to avoid double / with index.html
