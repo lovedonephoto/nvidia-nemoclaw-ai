@@ -8,7 +8,7 @@ import Footer from "@/components/landing/Footer";
 const PicoClaw = () => {
   useEffect(() => {
     const pageTitle = "PicoClaw AI | install Pico Claw Github, Skills, Docker";
-    const pageDesc = "Deploy PicoClaw, the ultra-fast lightweight AI agent. Sub-millisecond reasoning for edge devices and mobile hardware. Optimized for Apple Silicon M4.";
+    const pageDesc = "Install PicoClaw AI agent. Get the official Pico Claw Github code, specialized AI skills, and Docker setup guide for ultra-fast autonomous edge deployment.";
     
     document.title = pageTitle;
     const metaDesc = document.querySelector('meta[name="description"]');

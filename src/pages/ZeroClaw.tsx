@@ -8,7 +8,7 @@ import Footer from "@/components/landing/Footer";
 const ZeroClaw = () => {
   useEffect(() => {
     const pageTitle = "ZeroClaw AI | install Zero Claw Github, Skills, Docker";
-    const pageDesc = "Deploy ZeroClaw, the minimalist zero-configuration AI agent. Hardened security, auto-GPU mapping, and serverless ready for enterprise clusters today.";
+    const pageDesc = "Install ZeroClaw AI agent. Get the official Zero Claw Github code, specialized AI skills, and Docker setup guide for minimalist autonomous serverless runs.";
     
     document.title = pageTitle;
     const metaDesc = document.querySelector('meta[name="description"]');

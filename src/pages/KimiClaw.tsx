@@ -8,7 +8,7 @@ import Footer from "@/components/landing/Footer";
 const KimiClaw = () => {
   useEffect(() => {
     const pageTitle = "KimiClaw AI | install Kimi Claw Github, Skills, Docker";
-    const pageDesc = "Deploy KimiClaw, the advanced reasoning AI agent with 1M token context window. Specialized for multi-step planning and deep logical analysis tasks.";
+    const pageDesc = "Install KimiClaw AI agent. Get the official Kimi Claw Github code, specialized AI skills, and Docker setup guide for advanced 1M context autonomous reasoning.";
     
     document.title = pageTitle;
     const metaDesc = document.querySelector('meta[name="description"]');

@@ -8,7 +8,7 @@ import Footer from "@/components/landing/Footer";
 const OpenClaw = () => {
   useEffect(() => {
     const pageTitle = "OpenClaw AI | install Open Claw Github, Skills, Docker";
-    const pageDesc = "Deploy OpenClaw, the flexible open-source AI agent. Multi-LLM support, plug-and-play modules, and community templates for research and development.";
+    const pageDesc = "Install OpenClaw AI agent. Get the official Open Claw Github code, specialized AI skills, and Docker setup guide for flexible open-source AI research runs.";
     
     document.title = pageTitle;
     const metaDesc = document.querySelector('meta[name="description"]');
