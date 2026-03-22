@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroBg}
-          alt="NVIDIA NemoClaw AI Agent Neural Network Visualization"
+          alt="NemoClaw AI Agent Neural Network Visualization"
           className="w-full h-full object-cover opacity-40"
           loading="eager"
         />
@@ -52,7 +52,7 @@ const HeroSection = () => {
           <h1 className="font-display font-bold tracking-tighter leading-[0.9]">
             <span className="text-gradient-primary block text-6xl sm:text-8xl lg:text-[10rem] mb-4">NemoClaw</span>
             <span className="sr-only"> | </span>
-            <span className="block text-3xl sm:text-5xl lg:text-5xl text-foreground/90 leading-tight tracking-normal">NVIDIA Nemo Claw Install Setup AI</span>
+            <span className="block text-3xl sm:text-5xl lg:text-5xl text-foreground/90 leading-tight tracking-normal">Nemo Claw Install Setup AI</span>
           </h1>
         </motion.div>
 
@@ -80,7 +80,7 @@ const HeroSection = () => {
                   key={i}
                   className="inline-block h-10 w-10 rounded-full ring-2 ring-background grayscale hover:grayscale-0 transition-all duration-300"
                   src={url}
-                  alt={`Verified NVIDIA NemoClaw Developer Avatar ${i + 1}`}
+                  alt={`Verified NemoClaw Developer Avatar ${i + 1}`}
                 />
               ))}
               <div className="flex items-center justify-center h-10 w-10 rounded-full bg-primary/20 ring-2 ring-background backdrop-blur-sm text-[10px] font-bold text-primary">

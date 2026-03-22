@@ -8,12 +8,12 @@ import {
 
 const faqs = [
   {
-    question: "What is NemoClaw and how does NVIDIA Nemo Claw work?",
+    question: "What is NemoClaw and how does Nemo Claw work?",
     answer:
-      "NemoClaw (also known as NVIDIA Nemo Claw) is a GPU-accelerated AI agent platform built on NVIDIA Nemo. It deploys autonomous AI agents that reason, plan, and execute complex tasks using neural networks optimized for NVIDIA hardware.",
+      "NemoClaw (also known as Nemo Claw) is a GPU-accelerated AI agent platform built on Nemo. It deploys autonomous AI agents that reason, plan, and execute complex tasks using neural networks optimized for hardware.",
   },
   {
-    question: "How do I install NVIDIA Nemo Claw on my Mac?",
+    question: "How do I install Nemo Claw on my Mac?",
     answer:
       "Our Setup Kit includes a dedicated 'NemoClaw Mac' installation script. It automates the environment setup for Apple Silicon (M1/M2/M3), handles GPU acceleration dependencies, and gets the core NemoClaw AI agents running on macOS in about 5 minutes.",
   },
@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "What is the difference between NemoClaw and OpenClaw?",
     answer:
-      "OpenClaw is the open-source foundation. NemoClaw extends it with enterprise security, automated install scripts, ClawBot drag-and-drop builder, NVIDIA Nemotron integration, and professional deployment templates powered by our setup kit.",
+      "OpenClaw is the open-source foundation. NemoClaw extends it with enterprise security, automated install scripts, ClawBot drag-and-drop builder, Nemotron integration, and professional deployment templates powered by our setup kit.",
   },
   {
     question: "What is OpenClaw AI and the Open Claw GitHub project?",
@@ -35,17 +35,17 @@ const faqs = [
   {
     question: "What is NemoClaw ClawBot?",
     answer:
-      "NemoClaw ClawBot is the bot-building framework that enables developers to create intelligent bots and autonomous AI agents with drag-and-drop tools — no deep ML expertise required. It runs on NVIDIA GPU infrastructure for real-time inference.",
+      "NemoClaw ClawBot is the bot-building framework that enables developers to create intelligent bots and autonomous AI agents with drag-and-drop tools — no deep ML expertise required. It runs on GPU infrastructure for real-time inference.",
   },
   {
     question: "What is NanoClaw and how does it relate to NemoClaw?",
     answer:
-      "NanoClaw is the lightweight edge runtime for NemoClaw, designed for IoT devices, NVIDIA Jetson, and resource-constrained environments. It brings NemoClaw AI agent capabilities to edge computing with optimized inference.",
+      "NanoClaw is the lightweight edge runtime for NemoClaw, designed for IoT devices, Jetson, and resource-constrained environments. It brings NemoClaw AI agent capabilities to edge computing with optimized inference.",
   },
   {
-    question: "Can I use NemoClaw with NVIDIA Nemotron models?",
+    question: "Can I use NemoClaw with Nemotron models?",
     answer:
-      "Yes. NemoClaw has native integration with NVIDIA Nemotron models for enhanced reasoning and language understanding. You can also bring your own models (BYOM) and deploy them alongside built-in models.",
+      "Yes. NemoClaw has native integration with Nemotron models for enhanced reasoning and language understanding. You can also bring your own models (BYOM) and deploy them alongside built-in models.",
   },
   {
     question: "How does NemoClaw pricing work?",

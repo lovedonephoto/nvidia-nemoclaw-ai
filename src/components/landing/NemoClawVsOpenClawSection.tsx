@@ -9,7 +9,7 @@ const comparisons = [
   { feature: "ClawBot Builder (Drag & Drop)", nemoclaw: true, openclaw: false },
   { feature: "Community Plugins & Extensions", nemoclaw: true, openclaw: true },
   { feature: "Automated Install Scripts", nemoclaw: true, openclaw: false },
-  { feature: "NVIDIA Nemotron Integration", nemoclaw: true, openclaw: false },
+  { feature: "Nemotron Integration", nemoclaw: true, openclaw: false },
 ];
 
 const NemoClawVsOpenClawSection = () => {
@@ -28,7 +28,7 @@ const NemoClawVsOpenClawSection = () => {
             <span className="text-gradient-primary">NemoClaw</span> vs <span className="text-gradient-primary">OpenClaw</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            NemoClaw builds on the open-source OpenClaw foundation with enterprise features, automated tooling, and NVIDIA Nemotron model support.
+            NemoClaw builds on the open-source OpenClaw foundation with enterprise features, automated tooling, and Nemotron model support.
           </p>
         </motion.div>
 

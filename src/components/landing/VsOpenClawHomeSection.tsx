@@ -16,7 +16,7 @@ const VsOpenClawHomeSection = () => {
               </h2>
               <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-8">
                  Unlike the standard OpenClaw repository which targets only core Linux functions, 
-                 our professional NemoClaw deployment kit is multi-modal, secure, and ready for <strong>NVIDIA infrastructure</strong> in seconds.
+                 our professional NemoClaw deployment kit is multi-modal, secure, and ready for <strong>infrastructure</strong> in seconds.
               </p>
               
               <Link 

@@ -20,7 +20,7 @@ const NemotronFamilySection = () => {
         "Great for addressing complex tasks in multi-agent environment",
         "Suitable for single data center GPU deployments"
       ],
-      links: ["Demo Model on OpenRouter", "Experience as NVIDIA NIM API", "Download on Hugging Face"]
+      links: ["Demo Model on OpenRouter", "Experience as NIM API", "Download on Hugging Face"]
     },
     {
       name: "Llama Nemotron Ultra 253B",
@@ -38,7 +38,7 @@ const NemotronFamilySection = () => {
         "Designed for document intelligence and video understanding",
         "Suitable for single data center GPU deployments"
       ],
-      links: ["Experience the Model as NVIDIA NIM API", "Download on Hugging Face"]
+      links: ["Experience the Model as NIM API", "Download on Hugging Face"]
     }
   ];
 
@@ -46,7 +46,7 @@ const NemotronFamilySection = () => {
     <section className="py-24 relative bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-display text-3xl sm:text-5xl font-bold mb-4 italic">NVIDIA Nemotron 3 Super</h2>
+          <h2 className="font-display text-3xl sm:text-5xl font-bold mb-4 italic">Nemotron 3 Super</h2>
           <p className="text-muted-foreground text-sm uppercase tracking-[0.2em] font-bold">Tailored for every scale of agentic intelligence.</p>
         </div>
 

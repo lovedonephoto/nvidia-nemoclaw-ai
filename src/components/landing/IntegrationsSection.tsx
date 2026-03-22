@@ -32,10 +32,10 @@ const IntegrationsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl sm:text-5xl font-bold mb-4">
-            Optimized for <span className="text-gradient-primary">NVIDIA Stack</span>
+            Optimized for <span className="text-gradient-primary">Stack</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Seamlessly integrates with the NVIDIA AI stack for maximum performance and flexibility.
+            Seamlessly integrates with the AI stack for maximum performance and flexibility.
           </p>
         </motion.div>
 

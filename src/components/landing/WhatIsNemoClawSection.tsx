@@ -5,7 +5,7 @@ import CountdownTimer from "./CountdownTimer";
 const highlights = [
   { icon: Shield, label: "Run OpenClaw in an Isolated Sandbox", desc: "Use OpenClaw as your agent. No code changes." },
   { icon: Lock, label: "Deny-by-Default Access", desc: "Agents start with zero permissions, and you explicitly approve based on intent and governance." },
-  { icon: UserCheck, label: "Private Inference by Default", desc: "NemoClaw uses a local open model on-device (such as NVIDIA Nemotron) for private work." },
+  { icon: UserCheck, label: "Private Inference by Default", desc: "NemoClaw uses a local open model on-device (such as Nemotron) for private work." },
   { icon: Power, label: "Always-on", desc: "Close your laptop — the agent keeps working on DGX Spark or Station. With no per-token cloud costs." },
 ];
 
@@ -22,14 +22,14 @@ const WhatIsNemoClawSection = () => {
           className="max-w-4xl mx-auto text-center mb-16"
         >
           <h2 className="font-display text-3xl sm:text-5xl font-bold mb-6">
-            What is <span className="text-gradient-primary">NVIDIA NemoClaw</span>?
+            What is <span className="text-gradient-primary">NemoClaw</span>?
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed max-w-4xl mx-auto mb-6 text-left sm:text-center">
             NemoClaw is an open source stack that simplifies running <strong className="text-foreground">OpenClaw</strong> always-on assistants—with a single command. It incorporates policy-based privacy and security guardrails, giving users control over their agents' behavior and data handling. This enables self-evolving claws to run more safely in clouds, on premises, RTX PCs, and DGX Spark.
           </p>
 
           <p className="text-muted-foreground text-lg leading-relaxed max-w-4xl mx-auto mb-10 text-left sm:text-center">
-            NemoClaw uses open source models, like <strong className="text-foreground">NVIDIA Nemotron</strong>, alongside the NVIDIA OpenShell runtime—a secure environment designed for executing claws more safely. By combining powerful open source models with built-in safety measures, NemoClaw simplifies and secures AI agent deployment.
+            NemoClaw uses open source models, like <strong className="text-foreground">Nemotron</strong>, alongside the OpenShell runtime—a secure environment designed for executing claws more safely. By combining powerful open source models with built-in safety measures, NemoClaw simplifies and secures AI agent deployment.
           </p>
 
           <div className="flex justify-center mb-24">

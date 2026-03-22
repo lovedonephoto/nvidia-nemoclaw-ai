@@ -31,13 +31,13 @@ const OpenClawSection = () => {
               </p>
               <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                 The NemoClaw ClawBot framework enables developers to create intelligent bots and 
-                autonomous agents powered by NVIDIA's GPU infrastructure. Fork it, extend it, ship it.
+                autonomous agents powered by GPU infrastructure. Fork it, extend it, ship it.
               </p>
               <div className="flex gap-3">
                 <Button 
                   variant="hero" 
                   size="lg"
-                  onClick={() => window.open('https://github.com/NVIDIA/NemoClaw', '_blank')}
+                  onClick={() => window.open('https://github.com/lovedonephoto/nemoclaw-ai', '_blank')}
                 >
                   <Github className="w-4 h-4 mr-1" />
                   View on GitHub
@@ -45,7 +45,7 @@ const OpenClawSection = () => {
                 <Button 
                   variant="hero-outline" 
                   size="lg"
-                  onClick={() => window.open('https://docs.nvidia.com/nemo-framework/user-guide/latest/index.html', '_blank')}
+                  onClick={() => window.open('https://github.com/lovedonephoto/nemoclaw-ai', '_blank')}
                 >
                   Read the Docs
                 </Button>

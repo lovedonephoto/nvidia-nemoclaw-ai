@@ -4,7 +4,7 @@ const comparisonData = [
   {
     feature: "Developer",
     openClaw: "Open-source community (created by Peter Steinberger)",
-    nemoClaw: "NVIDIA",
+    nemoClaw: "Community Edition",
   },
   {
     feature: "Core Concept",
@@ -19,17 +19,17 @@ const comparisonData = [
   {
     feature: "Security & Privacy",
     openClaw: "Basic local storage; relies on the user to manually containerize the app to avoid third-party plugin vulnerabilities.",
-    nemoClaw: "Enterprise-grade; uses NVIDIA OpenShell for isolated sandboxing, policy-based guardrails, and confidential computing.",
+    nemoClaw: "Enterprise-grade; uses OpenShell for isolated sandboxing, policy-based guardrails, and confidential computing.",
   },
   {
     feature: "Setup & Deployment",
     openClaw: "Highly flexible (runs on a VPS, Mac Mini, Raspberry Pi, etc.) but requires manual configuration of dependencies.",
-    nemoClaw: "One-command installation via the NVIDIA Agent Toolkit; optimized for RTX PCs, DGX Stations, and the cloud.",
+    nemoClaw: "One-command installation via the Agent Toolkit; optimized for RTX PCs, DGX Stations, and the cloud.",
   },
   {
     feature: "Ecosystem Focus",
     openClaw: "Rapid customization, vibrant community plugins (Claw Hub), and personal app integrations (WhatsApp, Telegram, etc.).",
-    nemoClaw: "Stability, data protection, scalable orchestration, and controlled model inference (like NVIDIA Nemotron models).",
+    nemoClaw: "Stability, data protection, scalable orchestration, and controlled model inference (like Nemotron models).",
   },
 ];
 
@@ -49,7 +49,7 @@ const VsTableSection = () => {
           </h2>
           
           <p className="text-muted-foreground text-lg mb-12 leading-relaxed">
-            Here is a straightforward comparison between OpenClaw and NVIDIA's NemoClaw. It is important to note that they aren't entirely separate competitors; rather, <strong className="text-foreground">OpenClaw</strong> is the core AI assistant, while <strong className="text-foreground">NemoClaw</strong> is an orchestration and security layer designed by NVIDIA to run OpenClaw safely at an enterprise level.
+            Here is a straightforward comparison between OpenClaw and the NemoClaw Toolkit. It is important to note that they aren't entirely separate competitors; rather, <strong className="text-foreground">OpenClaw</strong> is the core AI assistant, while <strong className="text-foreground">NemoClaw</strong> is an orchestration and security layer designed to run OpenClaw safely at an enterprise level.
           </p>
 
           <div className="overflow-x-auto">
@@ -58,7 +58,7 @@ const VsTableSection = () => {
                 <tr className="border-b border-border/60">
                   <th className="py-6 pr-6 font-display text-sm font-semibold text-muted-foreground uppercase tracking-wider w-1/4">Feature</th>
                   <th className="py-6 px-6 font-display text-sm font-semibold text-muted-foreground uppercase tracking-wider w-3/8">OpenClaw</th>
-                  <th className="py-6 pl-6 font-display text-sm font-semibold text-primary uppercase tracking-wider w-3/8">NemoClaw (by NVIDIA)</th>
+                  <th className="py-6 pl-6 font-display text-sm font-semibold text-primary uppercase tracking-wider w-3/8">NemoClaw (Toolkit)</th>
                 </tr>
               </thead>
               <tbody>

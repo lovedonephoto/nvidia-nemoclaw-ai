@@ -21,70 +21,19 @@ export default defineConfig(({ mode }) => ({
         // Use originalUrl if available, otherwise fallback to path
         const url = ctx.originalUrl || ctx.path || '/';
         
-        let title = "Nemo Claw AI | NVIDIA NemoClaw Install Setup";
-        let desc = "Nemo Claw AI: Install NVIDIA NemoClaw with our setup guide. Compare NemoClaw vs OpenClaw & OpenShell. Get the latest code via our GitHub repository.";
-        let keywords = "NemoClaw, NVIDIA NemoClaw, Nemo Claw, NVIDIA Nemo Claw, OpenClaw, Open Claw, NemoClaw AI, NemoClaw install, NemoClaw setup, AI agents, GPU accelerated, NVIDIA Nemo";
+        let title = "Nemo Claw AI | NemoClaw Install Setup";
+        let desc = "Nemo Claw AI: Install NemoClaw with our setup guide. Compare NemoClaw vs OpenClaw & OpenShell. Get the latest code via our GitHub repository.";
+        let keywords = "NemoClaw, Nemo Claw, OpenClaw, Open Claw, NemoClaw AI, NemoClaw install, NemoClaw setup, AI agents, GPU accelerated, Nemo";
 
-        if (url.includes('/install-nemoclaw')) {
-          title = "Install NemoClaw | NVIDIA AI Agent Setup Guide";
-          desc = "Step-by-step guide to Install NemoClaw. Automated setup for NVIDIA GPUs, Mac Apple Silicon, and enterprise Linux servers.";
-          keywords = "Install NemoClaw, NVIDIA AI Setup, NemoClaw v1.4, GPU Configuration";
-        } else if (url.includes('/nemoclaw-setup')) {
-          title = "NemoClaw Setup | Optimized AI Agent Configuration Guide";
-          desc = "Professional NemoClaw Setup guide. Configure NemoClaw for NVIDIA GPUs, set up API keys, and optimize your local AI agent env.";
-          keywords = "NemoClaw Setup, AI Agent Configuration, NVIDIA NIM Setup, GPU Tuning";
-        } else if (url.includes('/openshell')) {
-          title = "NemoClaw OpenShell | Secure AI-Augmented Terminal Engine";
-          desc = "Experience NemoClaw OpenShell: The ultimate AI-powered system terminal for NVIDIA hardware. Context-aware OS commands.";
-          keywords = "NemoClaw OpenShell, AI Terminal, NVIDIA OpenShell, Secure AI Terminal";
-        } else if (url.includes('/nemoclaw-vs-openclaw')) {
-          title = "NemoClaw vs OpenClaw | Detailed AI Agent Comparison";
-          desc = "Compare NemoClaw and OpenClaw. Discover the key differences in GPU optimization, security protocols, and reasoning performance.";
-          keywords = "NemoClaw vs OpenClaw, AI Agent Comparison, NVIDIA vs OpenSource AI";
-        } else if (url.includes('/neoclaw')) {
-          title = "NeoClaw Protocol | Next-Generation AI Agent Communication";
-          desc = "Explore the NeoClaw protocol for decentralized AI agent swarms. High-bandwidth communication for multi-agent systems.";
-          keywords = "NeoClaw, AI Protocols, Distributed AI, Agent Swarms";
-        } else if (url.includes('/nvidia-nemotron-3-super')) {
-          title = "NVIDIA Nemotron 3 Super | AI Reasoning & Agentic Models";
-          desc = "Learn about the NVIDIA Nemotron 3 Super model. Mamba-Transformer architecture with 1M token context window for deep reasoning.";
-          keywords = "Nemotron 3 Super, NVIDIA Nemotron, Mamba Architecture, 1M Context Window";
-        } else if (url.includes('/ai-agents')) {
-          title = "NemoClaw AI Agents Ecosystem Deployment Guide";
-          desc = "Discover the NemoClaw AI Agents Ecosystem. Deploy specialized PicoClaw, ZeroClaw, KimiClaw, and OpenClaw agents for your enterprise AI infrastructure today.";
-          keywords = "PicoClaw, ZeroClaw, KimiClaw, OpenClaw, AI Agents, NemoClaw Deployment, Autonomous Agents";
-        } else if (url.includes('/picoclaw')) {
-          title = "PicoClaw AI | install Pico Claw Github, Skills, Docker";
-          desc = "Install PicoClaw AI agent. Get the official Pico Claw Github code, specialized AI skills, and Docker setup guide for ultra-fast autonomous edge deployment.";
-          keywords = "PicoClaw, Edge AI, Lightweight Agent, NVIDIA Nemo, Mobile AI Deployment";
-        } else if (url.includes('/zeroclaw')) {
-          title = "ZeroClaw AI | install Zero Claw Github, Skills, Docker";
-          desc = "Install ZeroClaw AI agent. Get the official Zero Claw Github code, specialized AI skills, and Docker setup guide for minimalist autonomous serverless runs.";
-          keywords = "ZeroClaw, Zero-Config AI, Serverless Agents, Docker AI, Secure Autonomous Agent";
-        } else if (url.includes('/kimiclaw')) {
-          title = "KimiClaw AI | install Kimi Claw Github, Skills, Docker";
-          desc = "Install KimiClaw AI agent. Get the official Kimi Claw Github code, specialized AI skills, and Docker setup guide for advanced 1M context autonomous reasoning.";
-          keywords = "KimiClaw, Deep Reasoning Agent, 1M Context Window, Strategic AI, Multi-step Planning";
-        } else if (url.includes('/openclaw')) {
-          title = "OpenClaw AI | install Open Claw Github, Skills, Docker";
-          desc = "Install OpenClaw AI agent. Get the official Open Claw Github code, specialized AI skills, and Docker setup guide for flexible open-source AI research runs.";
-          keywords = "OpenClaw, Open Source AI, Multi-LLM, AI Research, Plug-and-play Agents";
-        } else if (url.includes('/tinyclaw')) {
-          title = "TinyClaw AI | install Tiny Claw Github, Skills, Docker";
-          desc = "Install TinyClaw AI agent. Get the official Tiny Claw Github code, specialized AI skills, and Docker setup guide for embedded nano-agent deployment.";
-          keywords = "TinyClaw, Nano Agent, Embedded AI, IoT Agents, Low Power AI";
-        } else if (url.includes('/ironclaw')) {
-          title = "IronClaw AI | install Iron Claw Github, Skills, Docker";
-          desc = "Install IronClaw AI agent. Get the official Iron Claw Github code, specialized AI skills, and Docker setup guide for security-hardened autonomous runs.";
-          keywords = "IronClaw, Secure AI, Hardened Agent, AI Firewall, Security Automation";
-        } else if (url.includes('/researchclaw')) {
-          title = "ResearchClaw AI | install Research Claw Github, Skills, Docker";
-          desc = "Install ResearchClaw AI agent. Get the official Research Claw Github code, specialized AI skills, and Docker setup guide for automated deep-dive research runs.";
-          keywords = "ResearchClaw, Auto Research Agent, Web Research AI, Content Synthesis, Autonomous Researcher";
-        } else if (url.includes('/mimoclaw')) {
-          title = "MimoClaw AI | install Mimo Claw Github, Skills, Docker";
-          desc = "Install MimoClaw AI agent. Get the official Mimo Claw Github code, specialized AI skills, and Docker setup guide for multimedia and multimodal AI workflows.";
-          keywords = "MimoClaw, Multimodal AI, Multimedia Agent, Video Analysis AI, Audio Synthesis Agent";
+        if (url.includes('/privacy')) {
+          title = "Privacy Policy | NemoClaw AI";
+          desc = "Read the Privacy Policy for NemoClaw AI. We value your privacy and data security.";
+        } else if (url.includes('/terms')) {
+          title = "Terms of Service | NemoClaw AI";
+          desc = "Read the Terms of Service for NemoClaw AI. Legal agreements and usage terms.";
+        } else if (url.includes('/refund')) {
+          title = "Refund Policy | NemoClaw AI";
+          desc = "Read the Refund Policy for NemoClaw AI. Refund eligibility and process.";
         }
 
         // Clean up canonical to avoid double / with index.html

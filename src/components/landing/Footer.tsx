@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
 
 const footerLinks = {
-  Product: ["Features", "Pricing", "Documentation", "OpenShell"],
-  Guides: ["Install NemoClaw", "NemoClaw Setup", "NemoClaw vs OpenClaw"],
-  Resources: ["GitHub Repository", "Official Docs", "Contact Support"],
+  Product: ["Features", "Pricing", "Documentation"],
+  Resources: ["GitHub Repository", "Contact Support"],
   Legal: ["Privacy Policy", "Terms of Service", "Refund Policy"],
 };
 
@@ -22,12 +21,6 @@ const Footer = () => {
             <p className="text-muted-foreground text-sm mt-3 leading-relaxed">
               Automated deployment guides for NemoClaw agents.
             </p>
-
-            <div className="mt-4 p-3 rounded-lg bg-yellow-500/10 border border-yellow-500/20">
-              <p className="text-[10px] sm:text-xs text-muted-foreground leading-tight italic">
-                <strong>Disclaimer:</strong> This is an independent community project. It is NOT affiliated with, endorsed by, or representing NVIDIA Corporation.
-              </p>
-            </div>
           </div>
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
@@ -37,12 +30,8 @@ const Footer = () => {
                   let href = "#";
                   if (link === "Features") href = "/#features";
                   if (link === "Pricing") href = "/#pricing";
-                  if (link === "Documentation" || link === "Official Docs") href = "https://docs.nvidia.com/nemo-framework/user-guide/latest/index.html";
-                  if (link === "GitHub Repository") href = "https://github.com/lovedonephoto/nvidia-nemoclaw-ai";
-                  if (link === "NemoClaw vs OpenClaw") href = "/nemoclaw-vs-openclaw";
-                  if (link === "Install NemoClaw") href = "/install-nemoclaw";
-                  if (link === "NemoClaw Setup") href = "/nemoclaw-setup";
-                  if (link === "OpenShell") href = "/openshell";
+                  if (link === "Documentation") href = "https://github.com/lovedonephoto/nemoclaw-ai";
+                  if (link === "GitHub Repository") href = "https://github.com/lovedonephoto/nemoclaw-ai";
                   if (link === "Contact Support") href = `mailto:${supportEmail}`;
                   if (link === "Privacy Policy") href = "/privacy";
                   if (link === "Terms of Service") href = "/terms";
@@ -84,7 +73,7 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-primary transition-colors">Twitter</a>
-            <a href="https://github.com/lovedonephoto/nvidia-nemoclaw-ai" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">GitHub</a>
+            <a href="https://github.com/lovedonephoto/nemoclaw-ai" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">GitHub</a>
             <a href="#" className="hover:text-primary transition-colors">Discord</a>
             <a href="#" className="hover:text-primary transition-colors">LinkedIn</a>
           </div>

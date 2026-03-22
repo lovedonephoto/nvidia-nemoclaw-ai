@@ -17,13 +17,13 @@ const platforms = [
   {
     icon: Container,
     title: "NemoClaw Docker Deployment",
-    description: "Pre-built Docker images with NVIDIA Container Toolkit integration. Deploy NemoClaw in isolated containers with GPU passthrough in minutes.",
+    description: "Pre-built Docker images with Container Toolkit integration. Deploy NemoClaw in isolated containers with GPU passthrough in minutes.",
     keyword: "nemoclaw docker",
   },
   {
     icon: MonitorSmartphone,
     title: "NemoClaw Edge & NanoClaw",
-    description: "Lightweight NanoClaw runtime for edge devices and IoT. Run inference on NVIDIA Jetson, embedded systems, and resource-constrained environments.",
+    description: "Lightweight NanoClaw runtime for edge devices and IoT. Run inference on Jetson, embedded systems, and resource-constrained environments.",
     keyword: "nanoclaw",
   },
 ];
@@ -44,7 +44,7 @@ const NemoClawInstallSection = () => {
             How to <span className="text-gradient-primary">Install NemoClaw</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Deploy NVIDIA NemoClaw on any platform — Mac, Ubuntu, Docker, or edge devices. Our setup toolkit automates the entire installation process.
+            Deploy NemoClaw on any platform — Mac, Ubuntu, Docker, or edge devices. Our setup toolkit automates the entire installation process.
           </p>
         </motion.div>
 

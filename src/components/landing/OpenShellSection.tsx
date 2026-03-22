@@ -15,7 +15,7 @@ const OpenShellSection = () => {
             NemoClaw <span className="text-gradient-primary">OpenShell</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-12">
-            NVIDIA NemoClaw is an open source reference stack that simplifies running <span className="text-foreground underline decoration-primary/30 underline-offset-4">OpenClaw</span> always-on assistants safely. It installs the <a href="https://github.com/NVIDIA/OpenShell" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline underline-offset-4 inline-flex items-center gap-1">NVIDIA OpenShell <ExternalLink className="w-4 h-4" /></a> runtime, part of NVIDIA Agent Toolkit, a secure environment for running autonomous agents, and open source models like <span className="text-foreground border-b border-primary/30">NVIDIA Nemotron</span>.
+            NemoClaw is an open source reference stack that simplifies running <span className="text-foreground underline decoration-primary/30 underline-offset-4">OpenClaw</span> always-on assistants safely. It installs the <a href="https://github.com/lovedonephoto/nemoclaw-ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline underline-offset-4 inline-flex items-center gap-1">OpenShell <ExternalLink className="w-4 h-4" /></a> runtime, part of the Agent Toolkit, a secure environment for running autonomous agents, and open source models like <span className="text-foreground border-b border-primary/30">Nemotron</span>.
           </p>
 
           <h2 className="font-display text-2xl sm:text-4xl font-bold mb-8">
@@ -28,7 +28,7 @@ const OpenShellSection = () => {
           <div className="rounded-xl overflow-hidden border border-primary/20 bg-[#0c0c0c] shadow-2xl p-6 mb-10 group">
              <div className="flex gap-3 text-primary mb-0 font-mono text-sm sm:text-base">
                 <span>$</span>
-                <span className="text-foreground">curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash</span>
+                <span className="text-foreground">curl -fsSL https://www.nemoclawaiapp.com/nemoclaw.sh | bash</span>
               </div>
           </div>
 

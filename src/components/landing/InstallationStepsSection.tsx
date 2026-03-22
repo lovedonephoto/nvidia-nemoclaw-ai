@@ -5,7 +5,7 @@ const steps = [
   {
     icon: Download,
     title: "Download Setup Kit",
-    desc: "Get access to the official NVIDIA NemoClaw setup automation scripts and hardened security templates.",
+    desc: "Get access to the official NemoClaw setup automation scripts and hardened security templates.",
   },
   {
     icon: Terminal,
@@ -35,7 +35,7 @@ const InstallationStepsSection = () => {
             NemoClaw <span className="text-gradient-primary">Install & Setup</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Get your NVIDIA Nemo Claw <strong>Install</strong> and <strong>Setup</strong> running in record time with our professionally optimized AI deployment kit for Mac and GPU-accelerated systems.
+            Get your Nemo Claw <strong>Install</strong> and <strong>Setup</strong> running in record time with our professionally optimized AI deployment kit for Mac and GPU-accelerated systems.
           </p>
         </motion.div>
 
@@ -111,7 +111,7 @@ const InstallationStepsSection = () => {
             <div className="p-6 font-mono text-sm sm:text-base whitespace-pre-wrap">
               <div className="flex gap-3 text-primary mb-4">
                 <span>$</span>
-                <span className="text-foreground">curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash</span>
+                <span className="text-foreground">curl -fsSL https://www.nemoclawaiapp.com/nemoclaw.sh | bash</span>
               </div>
               <div className="text-muted-foreground space-y-2">
                 <p className="text-white/80">______________________________________________________</p>
@@ -119,7 +119,7 @@ const InstallationStepsSection = () => {
                   <span className="text-white/40">Sandbox</span>
                   <span className="text-green-500/80">my-assistant (Landlock + seccomp + netns)</span>
                   <span className="text-white/40">Model</span>
-                  <span className="text-blue-500/80">nvidia/nemotron-3-super-120b-a12b (API)</span>
+                  <span className="text-blue-500/80">nemotron-3-super-120b-a12b (API)</span>
                 </div>
                 <p className="text-white/80">______________________________________________________</p>
                 <div className="grid grid-cols-[100px_1fr] gap-4">

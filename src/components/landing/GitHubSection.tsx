@@ -16,7 +16,7 @@ const GitHubSection = () => {
           </motion.div>
           <h2 className="font-display text-3xl sm:text-5xl font-bold mb-6 italic tracking-tight">NemoClaw GitHub</h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            NemoClaw is built on <strong>Open Source</strong> foundations. Join our growing community of developers contributing to the most advanced <strong>NVIDIA-accelerated</strong> AI agent setup kit.
+            NemoClaw is built on <strong>Open Source</strong> foundations. Join our growing community of developers contributing to the most advanced <strong>-accelerated</strong> AI agent setup kit.
           </p>
         </div>
 
@@ -38,7 +38,7 @@ const GitHubSection = () => {
                   <div className="text-white/40 text-xs font-mono">v1.4.2-stable</div>
                 </div>
                 
-                <h3 className="text-2xl font-bold tracking-tight mb-4">nvidia/nemoclaw-setup-kit</h3>
+                <h3 className="text-2xl font-bold tracking-tight mb-4">nemoclaw-setup-kit</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-8">
                   The core automation layer, security hardening templates, and <strong>NIM microservice</strong> integration scripts are fully transparent and auditable.
                 </p>
@@ -68,14 +68,14 @@ const GitHubSection = () => {
               <div className="flex flex-col gap-4">
                  <button
                    className="w-full h-16 bg-white text-black font-bold rounded-2xl flex items-center justify-center gap-4 hover:bg-gray-100 transition-all active:scale-95 shadow-2xl"
-                   onClick={() => window.open('https://github.com/NVIDIA/NemoClaw', '_blank')}
+                   onClick={() => window.open('https://github.com/lovedonephoto/nemoclaw-ai', '_blank')}
                  >
                    <Github className="w-6 h-6" />
                    Star on GitHub
                  </button>
                  <button
                    className="w-full h-16 bg-white/5 border border-white/10 text-white font-bold rounded-2xl flex items-center justify-center gap-4 hover:bg-white/10 transition-all active:scale-95"
-                   onClick={() => window.open('https://github.com/NVIDIA/NemoClaw/discussions', '_blank')}
+                   onClick={() => window.open('https://github.com/lovedonephoto/nemoclaw-ai', '_blank')}
                  >
                    Join Discussions
                    <ExternalLink className="w-5 h-5" />
