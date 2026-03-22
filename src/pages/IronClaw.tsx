@@ -35,8 +35,20 @@ const IronClaw = () => {
       a: "IronClaw is our security-hardened agent designed for government, finance, and healthcare industries where data privacy is non-negotiable."
     },
     {
-      q: "How does it handle adversarial attacks?",
-      a: "IronClaw uses a multi-layered verification system that cross-references all inputs against a library of known attack vectors before processing."
+      q: "How to install IronClaw for high-security environments?",
+      a: "The IronClaw installation guide includes steps for air-gapped systems and secure enclave integration using our hardened setup scripts."
+    },
+    {
+      q: "Where can I find the IronClaw Github repository?",
+      a: "The IronClaw Github repository contains our audited security firewalls and adversarial defense templates for trusted agentic autonomy."
+    },
+    {
+      q: "What are IronClaw's specialized Skills?",
+      a: "IronClaw is highly skilled in Vault Logic for key management, Adversarial Defense, and Data Cleansing for PII protection."
+    },
+    {
+      q: "Does IronClaw support Docker?",
+      a: "Yes, IronClaw can be run as a hardened Docker container, often utilizing Trusted Execution Environments (TEE) for protected memory runs."
     }
   ];
 
@@ -258,6 +270,24 @@ const IronClaw = () => {
               <div className="pl-8 text-primary/60 italic">cap_drop:</div>
               <div className="pl-12 text-primary/60 italic">- <span className="text-white">ALL</span></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-24">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-4xl font-bold mb-16 text-center italic tracking-tighter">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            {faqs.map((faq, i) => (
+              <div key={i} className="glass-panel p-10 rounded-[3rem] border-border/40 hover:bg-white/[0.02] transition-all">
+                <h4 className="font-bold mb-4 text-xl text-primary flex gap-4">
+                   <div className="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center text-[10px] mt-1 shrink-0">?</div>
+                   {faq.q}
+                </h4>
+                <p className="text-muted-foreground italic leading-relaxed pl-10 border-l border-white/5">{faq.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

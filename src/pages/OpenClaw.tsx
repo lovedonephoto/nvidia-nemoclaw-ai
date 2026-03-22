@@ -35,8 +35,20 @@ const OpenClaw = () => {
       a: "OpenClaw is designed to bridge the gap between proprietary AI and community research, providing a robust, extensible autonomous agent foundation."
     },
     {
-      q: "Can I use OpenClaw for local Llama-3 models?",
-      a: "Yes, OpenClaw has native support for Ollama and vLLM backends, making it perfect for your local open-source setup."
+      q: "How to install OpenClaw Github source code?",
+      a: "You can clone the official OpenClaw Github repository and run 'pip install -e .' to install in editable mode, which is perfect for research."
+    },
+    {
+      q: "What are the core OpenClaw Skills available?",
+      a: "OpenClaw Skills include Multi-Model Grip for LLM switching, Plugin Logic for custom behaviors, and automated Data Research synthesis."
+    },
+    {
+      q: "Can I run OpenClaw in a Docker container?",
+      a: "Yes, we provide an official OpenClaw Docker image and a Docker Compose example for quick, isolated agentic deployments."
+    },
+    {
+      q: "Is OpenClaw free to use?",
+      a: "Yes, the OpenClaw core is open source. Our setup kit provides the hardened automation and security templates to help you install it professionally."
     }
   ];
 
@@ -265,6 +277,24 @@ const OpenClaw = () => {
               <div className="pl-8 text-primary/60 italic">ports:</div>
               <div className="pl-12 text-primary/60 italic">- <span className="text-white">8000:8000</span></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-24">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-4xl font-bold mb-16 text-center italic tracking-tighter tracking-tight">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            {faqs.map((faq, i) => (
+              <div key={i} className="glass-panel p-10 rounded-[3rem] border-border/40 hover:bg-white/[0.02] transition-all">
+                <h4 className="font-bold mb-4 text-xl text-primary flex gap-4">
+                   <div className="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center text-[10px] mt-1 shrink-0">?</div>
+                   {faq.q}
+                </h4>
+                <p className="text-muted-foreground italic leading-relaxed pl-10 border-l border-white/5">{faq.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

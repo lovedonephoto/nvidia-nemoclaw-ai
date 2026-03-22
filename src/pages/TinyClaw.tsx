@@ -35,8 +35,20 @@ const TinyClaw = () => {
       a: "TinyClaw is our nano-agent designed for the edge of the edge. It's meant for IoT devices, wearables, and embedded hardware where resources are extremely tight."
     },
     {
-      q: "Does TinyClaw require a GPU?",
-      a: "No, TinyClaw is optimized for high-efficiency CPUs and NPUs (Neural Processing Units) found in mobile and embedded chips."
+      q: "Can I install TinyClaw on a Raspberry Pi?",
+      a: "Yes, you can install TinyClaw on ARM systems including Raspberry Pi, and it requires less than 512MB of RAM to function."
+    },
+    {
+      q: "Where is the TinyClaw Github repository?",
+      a: "The official TinyClaw Github hosts all the nano-logic pruning algorithms and MCU-compatible C++ cores."
+    },
+    {
+      q: "Which specialized Skills does TinyClaw have?",
+      a: "TinyClaw skills include Sensor Fusion for real-time IMU data, Voice Wake-up, and highly compressed Nano-Logic decision trees."
+    },
+    {
+      q: "Does TinyClaw support Docker?",
+      a: "Yes, we provide TinyClaw Docker images (including the 'nano' tag) for simulated embedded testing and CI/CD pipelines."
     }
   ];
 
@@ -257,6 +269,24 @@ const TinyClaw = () => {
               <div className="pl-12 text-primary/60 italic">- <span className="text-white">MEM_LIMIT=512MB</span></div>
               <div className="pl-12 text-primary/60 italic">- <span className="text-white">HARDWARE=arm64</span></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-24">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-4xl font-bold mb-16 text-center italic tracking-tighter">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            {faqs.map((faq, i) => (
+              <div key={i} className="glass-panel p-10 rounded-[3rem] border-border/40 hover:bg-white/[0.02] transition-all">
+                <h4 className="font-bold mb-4 text-xl text-primary flex gap-4">
+                   <div className="w-6 h-6 rounded-full border border-primary/20 flex items-center justify-center text-[10px] mt-1 shrink-0">?</div>
+                   {faq.q}
+                </h4>
+                <p className="text-muted-foreground italic leading-relaxed pl-10 border-l border-white/5">{faq.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -35,8 +35,20 @@ const ZeroClaw = () => {
       a: "ZeroClaw focuses on pure simplicity and rapid scaling. While others require manual tuning, ZeroClaw optimizes itself for the environment it's deployed in."
     },
     {
-      q: "Can I use ZeroClaw in a Docker cluster?",
-      a: "Absolutely. ZeroClaw and Docker are perfectly aligned for multi-node agentic swarms."
+      q: "Can I install ZeroClaw via Github?",
+      a: "Yes, the ZeroClaw setup kit includes a direct Github bridge CLI for pulling the latest security-hardened agent patterns."
+    },
+    {
+      q: "What are ZeroClaw's primary Skills?",
+      a: "ZeroClaw specializes in Auto-GPU Mapping, Secure Orbit for memory protection, and Serverless Sync for rapid cold-start times."
+    },
+    {
+      q: "Is there a ZeroClaw Docker image?",
+      a: "Absolutely. ZeroClaw Docker images (including the 'minimal' tag) are audited daily for the latest security vulnerabilities."
+    },
+    {
+      q: "Which operating systems support ZeroClaw?",
+      a: "ZeroClaw can be installed on Ubuntu, macOS (Apple Silicon), and any system running Docker or a compliant container runtime."
     }
   ];
 
