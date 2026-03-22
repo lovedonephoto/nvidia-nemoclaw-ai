@@ -58,6 +58,9 @@ export default defineConfig(({ mode }) => ({
         } else if (url.includes('/ugcclaw')) {
           title = "OpenClaw setup for UGC video generation TikTok | UgcClaw AI";
           desc = "Professional OpenClaw setup for UGC video generation on TikTok and Reels. Automate your viral content creation with specialized UgcClaw AI agents.";
+        } else if (url.includes('/macos-support')) {
+          title = "NemoClaw macOS Support | Apple Silicon M1-M4 AI Setup Guide";
+          desc = "NemoClaw macOS support for Apple Silicon (M1, M2, M3, M4). Install and run local AI agents with Metal Performance Shaders (MPS) for peak performance.";
         }
 
         // Clean up canonical to avoid double / with index.html
