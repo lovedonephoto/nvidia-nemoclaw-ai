@@ -22,6 +22,7 @@ import NemoClawVsOpenClaw from "./pages/NemoClawVsOpenClaw";
 import NemoClawSetup from "./pages/NemoClawSetup";
 import AiAgents from "./pages/AiAgents";
 import InstallNemoClaw from "./pages/InstallNemoClaw";
+import UgcClaw from "./pages/UgcClaw";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -52,6 +53,7 @@ const App = () => (
           <Route path="/nemoclaw-setup" element={<NemoClawSetup />} />
           <Route path="/ai-agents" element={<AiAgents />} />
           <Route path="/install-nemoclaw" element={<InstallNemoClaw />} />
+          <Route path="/ugcclaw" element={<UgcClaw />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

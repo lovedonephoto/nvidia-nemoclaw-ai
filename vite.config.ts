@@ -55,6 +55,9 @@ export default defineConfig(({ mode }) => ({
         } else if (url.includes('/nemotron-super')) {
           title = "Nemotron 3 Super | Advanced AI Reasoning Models";
           desc = "Experience Nemotron 3 Super models for advanced reasoning and multi-agent orchestration.";
+        } else if (url.includes('/ugcclaw')) {
+          title = "OpenClaw setup for UGC video generation TikTok | UgcClaw AI";
+          desc = "Professional OpenClaw setup for UGC video generation on TikTok and Reels. Automate your viral content creation with specialized UgcClaw AI agents.";
         }
 
         // Clean up canonical to avoid double / with index.html

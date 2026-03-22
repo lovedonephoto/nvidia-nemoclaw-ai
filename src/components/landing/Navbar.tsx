@@ -56,6 +56,7 @@ const Navbar = () => {
                 <Link to="/zeroclaw" className="block px-3 py-2 text-xs text-muted-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-colors">ZeroClaw</Link>
                 <Link to="/tinyclaw" className="block px-3 py-2 text-xs text-muted-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-colors">TinyClaw</Link>
                 <Link to="/ironclaw" className="block px-3 py-2 text-xs text-muted-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-colors">IronClaw</Link>
+                <Link to="/ugcclaw" className="block px-3 py-2 text-xs text-muted-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-colors">UgcClaw (TikTok)</Link>
                 <Link to="/ai-agents" className="block px-3 py-2 text-xs font-bold text-primary hover:bg-primary/5 rounded-lg transition-colors mt-1 border-t border-border/20 pt-2">View All Agents</Link>
               </div>
             </div>
@@ -90,6 +91,13 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
+              <Link
+                to="/ugcclaw"
+                className="block py-3 px-3 text-sm text-muted-foreground hover:text-primary transition-colors"
+                onClick={() => setMobileOpen(false)}
+              >
+                UgcClaw (TikTok)
+              </Link>
               <Link
                 to="/ai-agents"
                 className="block py-3 px-3 text-sm text-primary font-bold hover:bg-primary/5 transition-colors"
