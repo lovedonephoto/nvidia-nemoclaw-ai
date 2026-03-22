@@ -21,8 +21,8 @@ export default defineConfig(({ mode }) => ({
         // Use originalUrl if available, otherwise fallback to path
         const url = ctx.originalUrl || ctx.path || '/';
         
-        let title = "Nemo Claw AI | NemoClaw Install Setup";
-        let desc = "Nemo Claw AI: Install NemoClaw with our setup guide. Compare NemoClaw vs OpenClaw & OpenShell. Get the latest code via our GitHub repository.";
+        let title = "Nemo Claw AI | NemoClaw Install Setup Download";
+        let desc = "Nemo Claw AI: Install NemoClaw with our setup guide. Download NemoClaw, compare vs OpenClaw. Get the latest code via our GitHub repository.";
         let keywords = "NemoClaw, Nemo Claw, OpenClaw, Open Claw, NemoClaw AI, NemoClaw install, NemoClaw setup, AI agents, GPU accelerated, Nemo";
 
         if (url.includes('/privacy')) {
