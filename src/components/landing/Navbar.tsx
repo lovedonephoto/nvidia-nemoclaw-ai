@@ -38,6 +38,28 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+          
+          <div className="relative group">
+            <button 
+              className="flex items-center gap-1 text-sm text-muted-foreground group-hover:text-primary transition-colors py-2"
+              onMouseEnter={() => setDropdownOpen(true)}
+            >
+              AI Agents
+              <ChevronDown className="w-4 h-4" />
+            </button>
+            <div 
+              className="absolute top-full left-0 w-48 pt-2 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200"
+              onMouseLeave={() => setDropdownOpen(false)}
+            >
+              <div className="glass-panel rounded-xl p-2 border-border/40 shadow-xl">
+                <Link to="/openclaw" className="block px-3 py-2 text-xs text-muted-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-colors">OpenClaw</Link>
+                <Link to="/zeroclaw" className="block px-3 py-2 text-xs text-muted-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-colors">ZeroClaw</Link>
+                <Link to="/tinyclaw" className="block px-3 py-2 text-xs text-muted-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-colors">TinyClaw</Link>
+                <Link to="/ironclaw" className="block px-3 py-2 text-xs text-muted-foreground hover:text-primary hover:bg-primary/5 rounded-lg transition-colors">IronClaw</Link>
+                <Link to="/ai-agents" className="block px-3 py-2 text-xs font-bold text-primary hover:bg-primary/5 rounded-lg transition-colors mt-1 border-t border-border/20 pt-2">View All Agents</Link>
+              </div>
+            </div>
+          </div>
         </div>
 
         <button
@@ -68,6 +90,13 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
+              <Link
+                to="/ai-agents"
+                className="block py-3 px-3 text-sm text-primary font-bold hover:bg-primary/5 transition-colors"
+                onClick={() => setMobileOpen(false)}
+              >
+                Explore AI Agents
+              </Link>
             </div>
           </motion.div>
         )}

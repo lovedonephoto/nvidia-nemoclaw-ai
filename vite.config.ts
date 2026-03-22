@@ -34,6 +34,27 @@ export default defineConfig(({ mode }) => ({
         } else if (url.includes('/refund')) {
           title = "Refund Policy | NemoClaw AI";
           desc = "Read the Refund Policy for NemoClaw AI. Refund eligibility and process.";
+        } else if (url.includes('/openclaw')) {
+          title = "OpenClaw AI Agent Deployment | NemoClaw AI";
+          desc = "Learn how to deploy OpenClaw using NemoClaw. The ultimate open-source AI assistant setup.";
+        } else if (url.includes('/zeroclaw')) {
+          title = "ZeroClaw AI Agent | Zero-Cost Autonomous AI";
+          desc = "Discover ZeroClaw, the zero-cost autonomous AI agent optimized for hardware acceleration.";
+        } else if (url.includes('/tinyclaw')) {
+          title = "TinyClaw AI | Lightweight AI Agent for Edge Devices";
+          desc = "TinyClaw: The lightweight AI agent designed for low-power edge devices and mobile hardware.";
+        } else if (url.includes('/ironclaw')) {
+          title = "IronClaw AI | Enterprise Grade AI Agent";
+          desc = "IronClaw: The secure, enterprise-grade AI agent with advanced reasoning and task execution.";
+        } else if (url.includes('/ai-agents')) {
+          title = "NemoClaw AI Agents Ecosystem | Compare All Agents";
+          desc = "Explore the NemoClaw AI agent ecosystem. Compare OpenClaw, ZeroClaw, IronClaw, and more.";
+        } else if (url.includes('/install-nemoclaw')) {
+          title = "Install NemoClaw | AI Agent Setup Guide";
+          desc = "Follow our step-by-step guide to install NemoClaw and deploy your first AI agent on Mac or Linux.";
+        } else if (url.includes('/nemotron-super')) {
+          title = "Nemotron 3 Super | Advanced AI Reasoning Models";
+          desc = "Experience Nemotron 3 Super models for advanced reasoning and multi-agent orchestration.";
         }
 
         // Clean up canonical to avoid double / with index.html
