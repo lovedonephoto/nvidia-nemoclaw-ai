@@ -89,15 +89,15 @@ const ZeroClaw = () => {
               <span className="text-[10px] font-black text-primary uppercase tracking-[0.2em]">Community Edition Setup Kit</span>
             </div>
 
-            {/* Main Neon Title */}
-            <h1 className="text-6xl md:text-9xl font-display font-black mb-4 leading-[0.85] tracking-tighter text-primary filter drop-shadow-[0_0_30px_rgba(var(--primary),0.3)]">
+            {/* Main Neon Title - Now H2 for visual style but semantic H1 is below */}
+            <h2 className="text-6xl md:text-9xl font-display font-black mb-4 leading-[0.85] tracking-tighter text-primary filter drop-shadow-[0_0_30px_rgba(var(--primary),0.3)]">
               ZeroClaw
-            </h1>
-            
-            {/* Subtitle Search-Optimized */}
-            <h2 className="text-2xl md:text-5xl font-bold mb-10 text-white leading-tight max-w-4xl tracking-tight">
-              ZeroClaw AI | <span className="italic opacity-80">install Zero Claw</span> Github, Skills, Docker
             </h2>
+            
+            {/* Subtitle Search-Optimized - Now the Semantic H1 */}
+            <h1 className="text-2xl md:text-5xl font-bold mb-10 text-white leading-tight max-w-4xl tracking-tight">
+              ZeroClaw AI | <span className="italic opacity-80">install Zero Claw</span> Github, Skills, Docker
+            </h1>
 
             {/* Description Styled like Image */}
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-12 leading-relaxed italic">

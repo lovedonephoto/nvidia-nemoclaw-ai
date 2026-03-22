@@ -87,13 +87,13 @@ const IronClaw = () => {
               <span className="text-[10px] font-black text-primary uppercase tracking-[0.2em]">Community Edition Setup Kit</span>
             </div>
 
-            <h1 className="text-6xl md:text-9xl font-display font-black mb-4 leading-[0.85] tracking-tighter text-primary filter drop-shadow-[0_0_30px_rgba(var(--primary),0.3)]">
+            <h2 className="text-6xl md:text-9xl font-display font-black mb-4 leading-[0.85] tracking-tighter text-primary filter drop-shadow-[0_0_30px_rgba(var(--primary),0.3)]">
               IronClaw
-            </h1>
-            
-            <h2 className="text-2xl md:text-5xl font-bold mb-10 text-white leading-tight max-w-4xl tracking-tight">
-              IronClaw AI | <span className="italic opacity-80">install Iron Claw</span> Github, Skills, Docker
             </h2>
+            
+            <h1 className="text-2xl md:text-5xl font-bold mb-10 text-white leading-tight max-w-4xl tracking-tight">
+              IronClaw AI | <span className="italic opacity-80">install Iron Claw</span> Github, Skills, Docker
+            </h1>
 
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-12 leading-relaxed italic">
               Professional automation scripts, security templates, and hardened configurations to deploy <strong>IronClaw AI</strong> agents on <strong>High-Risk</strong>, Secure, and Audited infrastructure.
