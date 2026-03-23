@@ -108,7 +108,10 @@ const MacOsSupport = () => {
               Unlock the full potential of your <strong>M1, M2, M3, or M4</strong> Mac. Run enterprise-grade <strong>NemoClaw</strong> agents with native <strong>MPS acceleration</strong> and privacy-first local memory.
             </p>
 
-            <button className="h-20 px-12 bg-white text-black font-black text-xl rounded-full flex items-center justify-center gap-4 hover:scale-105 transition-all shadow-2xl group active:scale-95">
+            <button 
+               onClick={() => window.open('https://buy.polar.sh/polar_cl_iOIqgNKmid5LFFmMwu56jM4gUWGjD5HlkAIyQ2xo12N', '_blank')}
+               className="h-20 px-12 bg-white text-black font-black text-xl rounded-full flex items-center justify-center gap-4 hover:scale-105 transition-all shadow-2xl group active:scale-95"
+            >
                Download Mac Setup Kit
                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -202,8 +205,11 @@ const MacOsSupport = () => {
               Don't leave your Apple Silicon performance untapped. Join 10k+ Mac power-users running <strong>NemoClaw</strong> locally.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-6">
-               <button className="h-16 px-10 bg-primary text-black font-black rounded-full hover:scale-105 transition-all shadow-xl shadow-primary/20">
-                  Buy Mac Setup Kit ($79.99)
+               <button 
+                  onClick={() => window.open('https://buy.polar.sh/polar_cl_iOIqgNKmid5LFFmMwu56jM4gUWGjD5HlkAIyQ2xo12N', '_blank')}
+                  className="h-16 px-10 bg-primary text-black font-black rounded-full hover:scale-105 transition-all shadow-xl shadow-primary/20"
+               >
+                  Buy Mac Setup Kit ($49.99)
                </button>
                <button className="h-16 px-10 border border-border bg-white/5 text-white font-black rounded-full hover:bg-white/10 transition-all">
                   Github Project
