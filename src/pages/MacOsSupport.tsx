@@ -56,25 +56,42 @@ const MacOsSupport = () => {
     <main className="min-h-screen bg-background text-foreground selection:bg-primary/30">
       <Navbar />
       
-      {/* JSON-LD Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nemoclawaiapp.com/" },
+            { "@type": "ListItem", "position": 2, "name": "macOS Support", "item": "https://nemoclawaiapp.com/macos-support" }
+          ]
+        })}
+      </script>
+
+      {/* Schema.org Structures */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "TechArticle",
           "headline": "NemoClaw macOS Support & Apple Silicon Installation Guide",
-          "description": "Comprehensive guide for installing and optimizing NemoClaw AI agents on Apple Silicon (M1, M2, M3, M4) hardware.",
-          "author": {
-            "@type": "Organization",
-            "name": "NemoClaw"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "NemoClaw"
-          },
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://nemoclawaiapp.com/macos-support"
-          }
+          "description": "Comprehensive guide for installing and optimizing NemoClaw AI agents on Apple Silicon (M1, M2, M3, M4) hardware using Metal (MPS).",
+          "author": { "@type": "Organization", "name": "NemoClaw" },
+          "publisher": { "@type": "Organization", "name": "NemoClaw" },
+          "mainEntityOfPage": { "@type": "WebPage", "@id": "https://nemoclawaiapp.com/macos-support" }
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": "How to Install NemoClaw on macOS Apple Silicon",
+          "description": "Step-by-step guide to installing NemoClaw with Metal acceleration on M1, M2, M3, or M4 Mac.",
+          "step": [
+            { "@type": "HowToStep", "name": "Run Installer", "text": "Run the guided bash script from nvidia.com/nemoclaw.sh." },
+            { "@type": "HowToStep", "name": "Enable Metal", "text": "Export NEMOCLAW_ENABLE_METAL=1 environment variable." },
+            { "@type": "HowToStep", "name": "Onboard", "text": "Run nemoclaw onboard to set up your API keys and sandbox." },
+            { "@type": "HowToStep", "name": "Connect", "text": "Run nemoclaw connect to enter the local AI sandbox." }
+          ]
         })}
       </script>
 
@@ -100,8 +117,8 @@ const MacOsSupport = () => {
               NemoClaw <span className="text-primary italic">macOS</span>
             </h2>
             
-            <h1 className="text-2xl md:text-5xl font-bold mb-10 text-muted-foreground leading-tight max-w-4xl tracking-tight">
-              Optimized <span className="text-white">Apple Silicon</span> Performance for Local AI Agents
+            <h1 className="text-2xl md:text-5xl font-bold mb-10 text-white leading-tight max-w-4xl tracking-tight">
+               NemoClaw macOS Support | <span className="text-primary italic">Apple Silicon M1-M4</span> AI Setup Guide
             </h1>
 
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-12 leading-relaxed italic">
@@ -217,6 +234,44 @@ const MacOsSupport = () => {
         </div>
       </section>
 
+      {/* Why Local AI on Mac - SEO Content */}
+      <section className="py-24 bg-zinc-950/20">
+         <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-4xl font-display font-black mb-12 italic tracking-tighter text-center">Why Run Local AI Agents on Mac?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+               <div>
+                  <h3 className="text-xl font-bold mb-4 italic text-primary">Unmatched Privacy & Security</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed italic">
+                     Building AI agents natively on your Mac means your data never leaves your device. Unlike cloud-based solutions, 
+                     <strong> NemoClaw macOS</strong> ensures that sensitive prompts, code, and agent results are handled entirely 
+                     within your <strong>on-device hardware</strong>.
+                  </p>
+               </div>
+               <div>
+                  <h3 className="text-xl font-bold mb-4 italic text-primary">Zero Latency Inference</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed italic">
+                     By leveraging <strong>Apple Silicon's Unified Memory Architecture</strong>, NemoClaw eliminates the "round-trip" 
+                     latency found in REST APIs. Experience instantaneous agent reasoning and autonomous task execution.
+                  </p>
+               </div>
+               <div>
+                  <h3 className="text-xl font-bold mb-4 italic text-primary">Cost Efficiency</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed italic">
+                     Stop paying per-token fees for iterative development. Once you install NemoClaw on your <strong>M2/M3/M4</strong>, 
+                     running autonomous workflows is essentially free.
+                  </p>
+               </div>
+               <div>
+                  <h3 className="text-xl font-bold mb-4 italic text-primary">Metal Performance Shaders (MPS)</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed italic">
+                     NemoClaw is specifically optimized for <strong>MPS</strong>, allowing it to tap into the high-core-count 
+                     GPUs inside the Pro and Max chip variants for enterprise-grade performance.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+
       {/* macOS Setup FAQ */}
       <section className="py-24 border-t border-border/40">
         <div className="container mx-auto px-4 max-w-4xl">
@@ -239,16 +294,30 @@ const MacOsSupport = () => {
             <p className="text-muted-foreground text-xl mb-12 max-w-2xl mx-auto italic">
               Don't leave your Apple Silicon performance untapped. Join 10k+ Mac power-users running <strong>NemoClaw</strong> locally.
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-6">
+            <div className="flex flex-wrap items-center justify-center gap-6 mb-12">
                <button 
                   onClick={() => window.open('https://buy.polar.sh/polar_cl_iOIqgNKmid5LFFmMwu56jM4gUWGjD5HlkAIyQ2xo12N', '_blank')}
                   className="h-16 px-10 bg-primary text-black font-black rounded-full hover:scale-105 transition-all shadow-xl shadow-primary/20"
                >
                   Buy Mac Setup Kit ($49.99)
                </button>
-               <button className="h-16 px-10 border border-border bg-white/5 text-white font-black rounded-full hover:bg-white/10 transition-all">
-                  Github Project
-               </button>
+               <a 
+                  href="https://docs.nvidia.com/nemoclaw/latest/get-started/quickstart.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="h-16 px-10 border border-border bg-white/5 text-white font-black rounded-full hover:bg-white/10 transition-all flex items-center"
+               >
+                  Official Documentation
+               </a>
+            </div>
+
+            <div className="inline-flex flex-wrap justify-center gap-4 text-xs font-bold text-muted-foreground uppercase tracking-widest italic border-t border-white/5 pt-12">
+               <span>Explore More:</span>
+               <Link to="/openclaw" className="text-primary hover:underline">OpenClaw</Link>
+               <Link to="/zeroclaw" className="text-primary hover:underline">ZeroClaw</Link>
+               <Link to="/tinyclaw" className="text-primary hover:underline">TinyClaw</Link>
+               <Link to="/ironclaw" className="text-primary hover:underline">IronClaw</Link>
+               <Link to="/ugcclaw" className="text-primary hover:underline">UgcClaw</Link>
             </div>
          </div>
       </section>
