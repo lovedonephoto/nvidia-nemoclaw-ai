@@ -35,20 +35,20 @@ const MacOsSupport = () => {
       a: "Yes, NemoClaw provides native support for macOS through Metal Performance Shaders (MPS), allowing for full GPU acceleration on Apple Silicon M-series chips."
     },
     {
-      q: "How to install NemoClaw on Apple Silicon M3/M4?",
-      a: "Our Mac Setup Kit automates the installation of Homebrew, Python, and the necessary Metal kernels to run NemoClaw locally on your MacBook Pro or Mac Studio."
+      q: "What are the minimum RAM requirements for Mac?",
+      a: "While 8GB is the minimum, 16GB is highly recommended. Mac systems with less than 8GB of RAM may experience OOM (Out of Memory) issues during sandbox container operations."
+    },
+    {
+      q: "Which Node.js version is required?",
+      a: "NemoClaw requires Node.js version 20 or later and npm version 10 or higher for the local CLI and automation bridge."
     },
     {
       q: "Can I run 70B models on a Mac Studio?",
-      a: "Absolutely. With the Unified Memory architecture of M2/M3 Ultra chips, NemoClaw can efficiently run 70B models like Llama-3 and Nemotron with high tokens-per-second."
+      a: "Absolutely. With the Unified Memory architecture of M2/M3 Ultra chips, NemoClaw can efficiently run 70B models with high tokens-per-second using host-mapped GPU memory."
     },
     {
       q: "Is an internet connection required for Mac AI agents?",
       a: "No. NemoClaw macOS support is built for offline, privacy-first local LLM execution. Your data stays on your Mac."
-    },
-    {
-      q: "Is it faster than Cloud-based agents?",
-      a: "For many tasks, yes. Local execution on Apple Silicon removes network latency, providing an 'instant-response' feel for autonomous agentic workflows."
     }
   ];
 
@@ -119,6 +119,37 @@ const MacOsSupport = () => {
         </div>
       </section>
 
+      {/* Official Technical Specifications */}
+      <section className="py-24 bg-primary/[0.03] border-y border-primary/10">
+         <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+               <h2 className="text-4xl md:text-6xl font-display font-black mb-4 italic tracking-tighter uppercase">NVIDIA Technical Specs</h2>
+               <p className="text-muted-foreground text-lg max-w-2xl mx-auto italic">Official system requirements for NVIDIA NemoClaw on macOS Apple Silicon.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
+               <div className="p-8 rounded-3xl border border-white/5 bg-white/[0.02]">
+                  <div className="text-primary font-black text-4xl mb-4">4+ vCPU</div>
+                  <div className="text-xs uppercase tracking-widest font-bold text-muted-foreground">Processor Requirement</div>
+               </div>
+               <div className="p-8 rounded-3xl border border-white/5 bg-white/[0.02]">
+                  <div className="text-primary font-black text-4xl mb-4">16GB RAM</div>
+                  <div className="text-xs uppercase tracking-widest font-bold text-muted-foreground">Recommended Memory</div>
+               </div>
+               <div className="p-8 rounded-3xl border border-white/5 bg-white/[0.02]">
+                  <div className="text-primary font-black text-4xl mb-4">40GB SSD</div>
+                  <div className="text-xs uppercase tracking-widest font-bold text-muted-foreground">Sandbox Storage</div>
+               </div>
+            </div>
+            <div className="mt-16 text-center">
+               <div className="inline-block glass-panel px-8 py-4 rounded-2xl border-primary/20">
+                  <span className="text-sm text-muted-foreground italic mr-4">Software dependencies:</span>
+                  <span className="text-sm font-bold text-white uppercase tracking-wider mr-4">Node.js 20+</span>
+                  <span className="text-sm font-bold text-white uppercase tracking-wider">Docker Desktop / Colima</span>
+               </div>
+            </div>
+         </div>
+      </section>
+
       {/* Comparison Grid */}
       <section className="py-24 border-y border-border/40 relative bg-zinc-950/50">
          <div className="container mx-auto px-4">
@@ -168,14 +199,18 @@ const MacOsSupport = () => {
             </div>
             <div className="glass-panel p-12 rounded-[3.5rem] border-border/40 relative overflow-hidden group">
                <Laptop className="w-64 h-64 text-primary absolute -right-20 -bottom-20 opacity-5 rotate-12 group-hover:scale-110 transition-transform" />
-               <h3 className="text-2xl font-bold mb-6 italic">Mac Setup Commands</h3>
+               <h3 className="text-2xl font-bold mb-6 italic">Official Quickstart Commands</h3>
                <div className="bg-black/50 p-6 rounded-2xl font-mono text-xs space-y-4 relative z-10 border border-white/5">
-                  <div className="text-primary/60"># Auto-detect Mac Architecture</div>
-                  <div className="text-white">./macos_setup.sh --detect-chip</div>
-                  <div className="text-primary/60"># Map Metal Performance Shaders</div>
-                  <div className="text-white">export FORCE_MPS=1</div>
-                  <div className="text-primary/60"># Boot NemoClaw Mac Agent</div>
-                  <div className="text-white">nemoclaw up --device mps</div>
+                  <div className="text-primary/60"># 1. Run Guided Installer</div>
+                  <div className="text-white">curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash</div>
+                  <div className="text-primary/60"># 2. Enable Metal Support</div>
+                  <div className="text-white">export NEMOCLAW_ENABLE_METAL=1</div>
+                  <div className="text-primary/60"># 3. Initialize & Onboard</div>
+                  <div className="text-white">nemoclaw onboard</div>
+                  <div className="text-primary/60"># 4. Connect to Sandbox</div>
+                  <div className="text-white">nemoclaw connect</div>
+                  <div className="text-primary/60"># 5. Launch Agent TUI</div>
+                  <div className="text-white">openclaw tui</div>
                </div>
             </div>
           </div>
