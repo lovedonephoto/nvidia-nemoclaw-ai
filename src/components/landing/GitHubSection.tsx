@@ -68,14 +68,14 @@ const GitHubSection = () => {
               <div className="flex flex-col gap-4">
                  <button
                    className="w-full h-16 bg-white text-black font-bold rounded-2xl flex items-center justify-center gap-4 hover:bg-gray-100 transition-all active:scale-95 shadow-2xl"
-                   onClick={() => window.open('https://github.com/lovedonephoto/nemoclaw-ai', '_blank')}
+                   onClick={() => window.open('https://github.com/lovedonephoto/nvidia-nemoclaw-ai', '_blank')}
                  >
                    <Github className="w-6 h-6" />
                    Star on GitHub
                  </button>
                  <button
                    className="w-full h-16 bg-white/5 border border-white/10 text-white font-bold rounded-2xl flex items-center justify-center gap-4 hover:bg-white/10 transition-all active:scale-95"
-                   onClick={() => window.open('https://github.com/lovedonephoto/nemoclaw-ai', '_blank')}
+                   onClick={() => window.open('https://github.com/lovedonephoto/nvidia-nemoclaw-ai', '_blank')}
                  >
                    Join Discussions
                    <ExternalLink className="w-5 h-5" />
