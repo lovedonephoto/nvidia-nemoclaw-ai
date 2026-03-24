@@ -113,7 +113,7 @@ const InstallationStepsSection = () => {
                 <div className="flex gap-3 text-primary font-mono text-sm sm:text-base">
                   <span>$</span>
                   <span className="text-foreground shrink-0">curl -fsSL https://get.nemoclaw.ai/</span>
-                  <span className="blur-[6px] select-none opacity-40 pointer-events-none">install | bash --config=PRO_SETUP_KIT</span>
+                  <span className="blur-[12px] select-none opacity-20 pointer-events-none">install | bash --config=PRO_SETUP_KIT</span>
                 </div>
                 <div className="absolute inset-0 bg-background/5 backdrop-blur-[2px] flex items-center justify-end pr-1 opacity-100 transition-all pointer-events-auto">
                    <button 

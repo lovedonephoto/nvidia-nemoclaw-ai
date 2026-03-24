@@ -46,7 +46,7 @@ const CTASection = () => {
              <div className="relative group/install overflow-hidden rounded-full bg-black/50 border border-white/5 px-6 py-3 flex items-center gap-3 font-mono text-xs">
                 <span>$</span>
                 <span className="text-foreground/80 shrink-0">curl -fsSL https://get.nemoclaw.ai/</span>
-                <span className="blur-[5px] select-none opacity-40 pointer-events-none">install | bash</span>
+                <span className="blur-[12px] select-none opacity-20 pointer-events-none">install | bash</span>
                 <div className="absolute inset-0 bg-background/5 backdrop-blur-[1px] flex items-center justify-end pr-1 opacity-100 transition-all pointer-events-auto">
                    <button 
                      onClick={() => window.open('https://buy.polar.sh/polar_cl_iOIqgNKmid5LFFmMwu56jM4gUWGjD5HlkAIyQ2xo12N', '_blank')}
