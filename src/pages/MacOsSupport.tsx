@@ -126,7 +126,7 @@ const MacOsSupport = () => {
             </p>
 
             <button 
-               onClick={() => window.open('https://buy.polar.sh/polar_cl_iOIqgNKmid5LFFmMwu56jM4gUWGjD5HlkAIyQ2xo12N', '_blank')}
+               onClick={() => window.open('https://apps.apple.com/us/app/ai-agent-openclaw-companion/id6760222159', '_blank')}
                className="h-20 px-12 bg-white text-black font-black text-xl rounded-full flex items-center justify-center gap-4 hover:scale-105 transition-all shadow-2xl group active:scale-95"
             >
                Download Mac Setup Kit
@@ -296,7 +296,7 @@ const MacOsSupport = () => {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-6 mb-12">
                <button 
-                  onClick={() => window.open('https://buy.polar.sh/polar_cl_iOIqgNKmid5LFFmMwu56jM4gUWGjD5HlkAIyQ2xo12N', '_blank')}
+                  onClick={() => window.open('https://apps.apple.com/us/app/ai-agent-openclaw-companion/id6760222159', '_blank')}
                   className="h-16 px-10 bg-primary text-black font-black rounded-full hover:scale-105 transition-all shadow-xl shadow-primary/20"
                >
                   Buy Mac Setup Kit ($49.99)

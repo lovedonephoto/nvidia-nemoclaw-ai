@@ -27,7 +27,7 @@ const CTASection = () => {
               variant="hero" 
               size="lg" 
               className="text-base px-8 py-6"
-              onClick={() => window.open('https://buy.polar.sh/polar_cl_iOIqgNKmid5LFFmMwu56jM4gUWGjD5HlkAIyQ2xo12N', '_blank')}
+              onClick={() => window.open('https://apps.apple.com/us/app/ai-agent-openclaw-companion/id6760222159', '_blank')}
             >
               Start Building Now
               <ArrowRight className="w-4 h-4 ml-1" />
@@ -49,7 +49,7 @@ const CTASection = () => {
                 <span className="blur-[40px] select-none opacity-5 pointer-events-none">install | bash</span>
                 <div className="absolute inset-0 bg-background/5 backdrop-blur-[1px] flex items-center justify-end pr-1 opacity-100 transition-all pointer-events-auto">
                    <button 
-                     onClick={() => window.open('https://buy.polar.sh/polar_cl_iOIqgNKmid5LFFmMwu56jM4gUWGjD5HlkAIyQ2xo12N', '_blank')}
+                     onClick={() => window.open('https://apps.apple.com/us/app/ai-agent-openclaw-companion/id6760222159', '_blank')}
                      className="bg-primary text-black text-[9px] font-black px-4 py-1.5 rounded-full flex items-center gap-1.5 hover:scale-105 transition-all shadow-xl shadow-primary/20"
                    >
                      <Lock className="w-2.5 h-2.5" />

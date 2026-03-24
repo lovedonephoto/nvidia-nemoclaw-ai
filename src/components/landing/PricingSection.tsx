@@ -18,7 +18,7 @@ const plans = [
     ],
     cta: "Get Setup",
     featured: true,
-    url: "https://buy.polar.sh/polar_cl_iOIqgNKmid5LFFmMwu56jM4gUWGjD5HlkAIyQ2xo12N"
+    url: "https://apps.apple.com/us/app/ai-agent-openclaw-companion/id6760222159"
   }
 ];
 
