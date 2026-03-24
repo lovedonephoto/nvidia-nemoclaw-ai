@@ -16,7 +16,7 @@ const plans = [
       "Ready-to-use Docker configs",
       "30-Day Priority Support Ticket"
     ],
-    cta: "Get Setup",
+    cta: "Download AI Agent App",
     featured: true,
     url: "https://apps.apple.com/us/app/ai-agent-openclaw-companion/id6760222159"
   }

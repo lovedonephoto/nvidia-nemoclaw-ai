@@ -103,7 +103,7 @@ const HeroSection = () => {
               className="px-12 h-16 bg-primary hover:bg-primary/90 hover:scale-105 active:scale-95 text-primary-foreground font-bold text-lg rounded-full min-w-[280px] transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3"
               onClick={() => window.open('https://apps.apple.com/us/app/ai-agent-openclaw-companion/id6760222159', '_blank')}
             >
-              Get Setup ($49.99)
+              Download AI Agent App
             </button>
           </div>
         </motion.div>

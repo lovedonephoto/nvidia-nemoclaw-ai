@@ -121,7 +121,7 @@ const InstallationStepsSection = () => {
                      className="bg-primary text-black text-[10px] font-black px-4 py-2 rounded-full flex items-center gap-2 hover:scale-105 transition-all shadow-xl shadow-primary/20"
                    >
                      <Lock className="w-3 h-3" />
-                     UNLOCK FULL SETUP
+                     DOWNLOAD AI AGENT APP
                    </button>
                 </div>
               </div>

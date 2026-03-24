@@ -53,7 +53,7 @@ const CTASection = () => {
                      className="bg-primary text-black text-[9px] font-black px-4 py-1.5 rounded-full flex items-center gap-1.5 hover:scale-105 transition-all shadow-xl shadow-primary/20"
                    >
                      <Lock className="w-2.5 h-2.5" />
-                     UNLOCK
+                     DOWNLOAD AI AGENT APP
                    </button>
                 </div>
              </div>
