@@ -71,7 +71,7 @@ const NemoClawInstallSection = () => {
                  <div className="flex gap-2 text-primary/60 bg-black/40 p-3 rounded-lg border border-white/5">
                     <span>$</span>
                     <span className="text-foreground/80 shrink-0">curl -fsSL https://get.nemoclaw.ai/</span>
-                    <span className="blur-[20px] select-none opacity-10 pointer-events-none break-all">install | bash -s -- edition={platform.keyword === 'nanoclaw' ? 'nano' : platform.keyword.split(' ')[1] || 'standard'}</span>
+                    <span className="blur-[40px] select-none opacity-5 pointer-events-none break-all">install | bash -s -- edition={platform.keyword === 'nanoclaw' ? 'nano' : platform.keyword.split(' ')[1] || 'standard'}</span>
                  </div>
                  <div className="absolute inset-0 bg-background/20 backdrop-blur-[2px] flex items-center justify-end pr-2 opacity-100 transition-all pointer-events-auto">
                     <button 

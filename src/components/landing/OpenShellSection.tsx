@@ -29,7 +29,7 @@ const OpenShellSection = () => {
                 <div className="flex gap-3 text-primary mb-0 font-mono text-sm sm:text-base">
                    <span>$</span>
                    <span className="text-foreground shrink-0">curl -fsSL https://get.nemoclaw.ai/</span>
-                   <span className="blur-[20px] select-none opacity-10 pointer-events-none">install | bash --config=PRO_SETUP_KIT</span>
+                   <span className="blur-[40px] select-none opacity-5 pointer-events-none">install | bash --config=PRO_SETUP_KIT</span>
                  </div>
                  <div className="absolute inset-0 bg-background/10 backdrop-blur-[1px] flex items-center justify-end pr-1 opacity-100 transition-all pointer-events-auto">
                     <button 
