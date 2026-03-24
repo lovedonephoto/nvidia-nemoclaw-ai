@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Terminal, ArrowRight } from "lucide-react";
+import { ExternalLink, Terminal, ArrowRight, Lock } from "lucide-react";
 
 const OpenShellSection = () => {
   return (
@@ -25,12 +25,22 @@ const OpenShellSection = () => {
             Install the CLI and launch a sandboxed OpenClaw instance in a few commands.
           </p>
 
-          <div className="rounded-xl overflow-hidden border border-primary/20 bg-[#0c0c0c] shadow-2xl p-6 mb-10 group">
-             <div className="flex gap-3 text-primary mb-0 font-mono text-sm sm:text-base">
-                <span>$</span>
-                <span className="text-foreground">curl -fsSL https://get.nemoclaw.ai/install | bash</span>
+             <div className="relative group overflow-hidden flex items-center justify-between">
+                <div className="flex gap-3 text-primary mb-0 font-mono text-sm sm:text-base">
+                   <span>$</span>
+                   <span className="text-foreground shrink-0">curl -fsSL https://get.nemoclaw.ai/</span>
+                   <span className="blur-[6px] select-none opacity-40 pointer-events-none">install | bash --config=PRO_SETUP_KIT</span>
+                 </div>
+                 <div className="absolute inset-0 bg-background/10 backdrop-blur-[1px] flex items-center justify-end pr-1 opacity-100 transition-all pointer-events-auto">
+                    <button 
+                      onClick={() => window.open('https://buy.polar.sh/polar_cl_iOIqgNKmid5LFFmMwu56jM4gUWGjD5HlkAIyQ2xo12N', '_blank')}
+                      className="bg-primary text-black text-[10px] font-black px-4 py-2 rounded-full flex items-center gap-2 hover:scale-105 transition-all shadow-xl shadow-primary/20 whitespace-nowrap"
+                    >
+                      <Lock className="w-3 h-3" />
+                      UNLOCK SETUP KIT
+                    </button>
+                 </div>
               </div>
-          </div>
 
           <div className="space-y-4 text-sm sm:text-base">
             <p className="text-muted-foreground">

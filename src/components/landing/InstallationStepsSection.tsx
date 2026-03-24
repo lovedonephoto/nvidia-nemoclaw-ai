@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Download, Terminal, Rocket, CheckCircle2 } from "lucide-react";
+import { Download, Terminal, Rocket, CheckCircle2, Lock } from "lucide-react";
 
 const steps = [
   {
@@ -109,9 +109,21 @@ const InstallationStepsSection = () => {
               <span className="text-[10px] text-muted-foreground font-mono ml-2 uppercase tracking-widest">NemoClaw Setup</span>
             </div>
             <div className="p-6 font-mono text-sm sm:text-base whitespace-pre-wrap">
-              <div className="flex gap-3 text-primary mb-4">
-                <span>$</span>
-                <span className="text-foreground">curl -fsSL https://get.nemoclaw.ai/install | bash</span>
+              <div className="relative group overflow-hidden mb-6">
+                <div className="flex gap-3 text-primary font-mono text-sm sm:text-base">
+                  <span>$</span>
+                  <span className="text-foreground shrink-0">curl -fsSL https://get.nemoclaw.ai/</span>
+                  <span className="blur-[6px] select-none opacity-40 pointer-events-none">install | bash --config=PRO_SETUP_KIT</span>
+                </div>
+                <div className="absolute inset-0 bg-background/5 backdrop-blur-[2px] flex items-center justify-end pr-1 opacity-100 transition-all pointer-events-auto">
+                   <button 
+                     onClick={() => window.open('https://buy.polar.sh/polar_cl_iOIqgNKmid5LFFmMwu56jM4gUWGjD5HlkAIyQ2xo12N', '_blank')}
+                     className="bg-primary text-black text-[10px] font-black px-4 py-2 rounded-full flex items-center gap-2 hover:scale-105 transition-all shadow-xl shadow-primary/20"
+                   >
+                     <Lock className="w-3 h-3" />
+                     UNLOCK FULL SETUP
+                   </button>
+                </div>
               </div>
               <div className="text-muted-foreground space-y-2">
                 <p className="text-white/80">______________________________________________________</p>

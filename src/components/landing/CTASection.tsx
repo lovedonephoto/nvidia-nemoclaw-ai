@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Lock } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -43,9 +43,19 @@ const CTASection = () => {
           </div>
           <div className="mt-12 flex flex-col items-center gap-3">
              <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em] italic">Or Quick Install</span>
-             <div className="bg-black/50 border border-white/5 rounded-full px-6 py-3 flex items-center gap-3 font-mono text-xs text-primary/80 group hover:border-primary/20 transition-all cursor-copy" onClick={() => navigator.clipboard.writeText('curl -fsSL https://get.nemoclaw.ai/install | bash')}>
+             <div className="relative group/install overflow-hidden rounded-full bg-black/50 border border-white/5 px-6 py-3 flex items-center gap-3 font-mono text-xs">
                 <span>$</span>
-                <span className="text-foreground/60 group-hover:text-foreground transition-colors">curl -fsSL https://get.nemoclaw.ai/install | bash</span>
+                <span className="text-foreground/80 shrink-0">curl -fsSL https://get.nemoclaw.ai/</span>
+                <span className="blur-[5px] select-none opacity-40 pointer-events-none">install | bash</span>
+                <div className="absolute inset-0 bg-background/5 backdrop-blur-[1px] flex items-center justify-end pr-1 opacity-100 transition-all pointer-events-auto">
+                   <button 
+                     onClick={() => window.open('https://buy.polar.sh/polar_cl_iOIqgNKmid5LFFmMwu56jM4gUWGjD5HlkAIyQ2xo12N', '_blank')}
+                     className="bg-primary text-black text-[9px] font-black px-4 py-1.5 rounded-full flex items-center gap-1.5 hover:scale-105 transition-all shadow-xl shadow-primary/20"
+                   >
+                     <Lock className="w-2.5 h-2.5" />
+                     UNLOCK
+                   </button>
+                </div>
              </div>
           </div>
         </motion.div>
