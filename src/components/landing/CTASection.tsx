@@ -41,6 +41,13 @@ const CTASection = () => {
               Get Support
             </Button>
           </div>
+          <div className="mt-12 flex flex-col items-center gap-3">
+             <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em] italic">Or Quick Install</span>
+             <div className="bg-black/50 border border-white/5 rounded-full px-6 py-3 flex items-center gap-3 font-mono text-xs text-primary/80 group hover:border-primary/20 transition-all cursor-copy" onClick={() => navigator.clipboard.writeText('curl -fsSL https://get.nemoclaw.ai/install | bash')}>
+                <span>$</span>
+                <span className="text-foreground/60 group-hover:text-foreground transition-colors">curl -fsSL https://get.nemoclaw.ai/install | bash</span>
+             </div>
+          </div>
         </motion.div>
       </div>
     </section>

@@ -111,7 +111,7 @@ const InstallationStepsSection = () => {
             <div className="p-6 font-mono text-sm sm:text-base whitespace-pre-wrap">
               <div className="flex gap-3 text-primary mb-4">
                 <span>$</span>
-                <span className="text-foreground">curl -fsSL https://www.nemoclawaiapp.com/nemoclaw.sh | bash</span>
+                <span className="text-foreground">curl -fsSL https://get.nemoclaw.ai/install | bash</span>
               </div>
               <div className="text-muted-foreground space-y-2">
                 <p className="text-white/80">______________________________________________________</p>
@@ -135,6 +135,27 @@ const InstallationStepsSection = () => {
               </div>
             </div>
           </motion.div>
+        </div>
+        {/* Setup Kit Features Grid for SEO */}
+        <div className="mt-24 max-w-6xl mx-auto rounded-[3rem] border border-primary/20 bg-primary/5 p-12 overflow-hidden relative group">
+           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] pointer-events-none" />
+           <div className="relative z-10">
+              <h3 className="font-display text-2xl sm:text-4xl font-bold mb-12 text-center italic tracking-tighter">Everything in the <span className="text-primary underline">Setup Kit</span></h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                 {[
+                   { t: "Native GPU Logic", d: "Auto-detects H100, RTX, and M-series chips for zero-config hardware mapping." },
+                   { t: "Isolated Sandboxing", d: "Deploy agents in hardened environments with restricted network policies." },
+                   { t: "Custom Skills Kit", d: "Pre-configured agents for code generation, UGC, and browser automation." },
+                   { t: "Direct CLI Build", d: "Compile and manage NemoClaw instances directly from your terminal." }
+                 ].map((feat, idx) => (
+                   <div key={idx} className="p-6 rounded-2xl bg-black/40 border border-white/5 hover:border-primary/40 transition-all">
+                      <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs mb-4">{idx + 1}</div>
+                      <h4 className="font-bold text-lg mb-2 text-foreground italic">{feat.t}</h4>
+                      <p className="text-xs text-muted-foreground leading-relaxed italic">{feat.d}</p>
+                   </div>
+                 ))}
+              </div>
+           </div>
         </div>
       </div>
     </section>

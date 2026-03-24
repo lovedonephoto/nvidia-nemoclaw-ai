@@ -56,14 +56,22 @@ const NemoClawInstallSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="glass-panel rounded-xl p-6 hover:border-primary/30 transition-all duration-300 flex gap-5"
+              className="glass-panel rounded-xl p-8 hover:border-primary/30 transition-all duration-300 flex flex-col gap-5 group"
             >
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <platform.icon className="w-6 h-6 text-primary" />
+              <div className="flex gap-5">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <platform.icon className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-display text-lg font-semibold mb-2 text-foreground">{platform.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{platform.description}</p>
+                </div>
               </div>
-              <div>
-                <h3 className="font-display text-lg font-semibold mb-2 text-foreground">{platform.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{platform.description}</p>
+              <div className="mt-auto pt-4 border-t border-white/5 font-mono text-[10px] sm:text-xs">
+                 <div className="flex gap-2 text-primary/60 bg-black/40 p-3 rounded-lg border border-white/5">
+                    <span>$</span>
+                    <span className="text-foreground/80 break-all">curl -fsSL https://get.nemoclaw.ai/install | bash -s -- edition={platform.keyword === 'nanoclaw' ? 'nano' : platform.keyword.split(' ')[1] || 'standard'}</span>
+                 </div>
               </div>
             </motion.div>
           ))}

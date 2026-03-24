@@ -28,7 +28,7 @@ const OpenShellSection = () => {
           <div className="rounded-xl overflow-hidden border border-primary/20 bg-[#0c0c0c] shadow-2xl p-6 mb-10 group">
              <div className="flex gap-3 text-primary mb-0 font-mono text-sm sm:text-base">
                 <span>$</span>
-                <span className="text-foreground">curl -fsSL https://www.nemoclawaiapp.com/nemoclaw.sh | bash</span>
+                <span className="text-foreground">curl -fsSL https://get.nemoclaw.ai/install | bash</span>
               </div>
           </div>
 
