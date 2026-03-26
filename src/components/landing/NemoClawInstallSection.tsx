@@ -4,20 +4,20 @@ import { Terminal, Apple, Container, MonitorSmartphone, Lock } from "lucide-reac
 const platforms = [
   {
     icon: Terminal,
-    title: "NemoClaw Install on Ubuntu",
-    description: "One-command installation scripts for Ubuntu 22.04+ with automatic CUDA driver setup, dependency resolution, and systemd service configuration.",
+    title: "Nemo Claw Install (Ubuntu)",
+    description: "One-command NemoClaw Setup scripts for Ubuntu 22.04+ with automatic CUDA driver setup and resolution.",
     keyword: "nemoclaw install",
   },
   {
     icon: Apple,
-    title: "NemoClaw on Mac",
-    description: "Native Apple Silicon support with Metal acceleration. Run NemoClaw AI agents locally on M-series chips with optimized memory management.",
+    title: "Nemo Claw Mac Setup",
+    description: "Native Apple Silicon NemoClaw Setup with Metal acceleration. Run AI agents locally on M-series chips.",
     keyword: "nemoclaw mac",
   },
   {
     icon: Container,
-    title: "NemoClaw Docker Deployment",
-    description: "Pre-built Docker images with Container Toolkit integration. Deploy NemoClaw in isolated containers with GPU passthrough in minutes.",
+    title: "NemoClaw Docker Setup",
+    description: "Pre-built Docker images for Nemo Claw Install. Deploy in isolated containers with GPU passthrough in minutes.",
     keyword: "nemoclaw docker",
   },
   {

@@ -4,13 +4,13 @@ import { Download, Terminal, Rocket, CheckCircle2, Lock } from "lucide-react";
 const steps = [
   {
     icon: Download,
-    title: "Download Setup Kit",
-    desc: "Get access to the official NemoClaw setup automation scripts and hardened security templates.",
+    title: "NemoClaw Setup Access",
+    desc: "Get access to the official Nemo Claw Install automation scripts and hardened security templates.",
   },
   {
     icon: Terminal,
-    title: "Run Install Script",
-    desc: "Simply execute the install command. Our script handles dependencies, GPU drivers, and Mac optimization automatically.",
+    title: "Nemo Claw Install",
+    desc: "Simply execute the NemoClaw Setup command. Our script handles dependencies, GPU drivers, and Mac optimization.",
   },
   {
     icon: Rocket,
