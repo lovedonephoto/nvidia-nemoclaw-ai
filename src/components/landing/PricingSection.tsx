@@ -16,9 +16,9 @@ const plans = [
       "Ready-to-use Docker configs",
       "30-Day Priority Support Ticket"
     ],
-    cta: "Download AI Agent App",
+    cta: "Get Started Now",
     featured: true,
-    url: "https://apps.apple.com/us/app/ai-agent-openclaw-companion/id6760222159"
+    url: "#install-nemoclaw"
   }
 ];
 
@@ -79,7 +79,13 @@ const PricingSection = () => {
                 <Button 
                   variant={plan.featured ? "hero" : "hero-outline"} 
                   className="w-full"
-                  onClick={() => plan.url && window.open(plan.url, '_blank')}
+                  onClick={() => {
+                    if (plan.url?.startsWith('#')) {
+                      document.getElementById(plan.url.substring(1))?.scrollIntoView({ behavior: 'smooth' });
+                    } else if (plan.url) {
+                      window.open(plan.url, '_blank');
+                    }
+                  }}
                 >
                   {plan.cta}
                 </Button>

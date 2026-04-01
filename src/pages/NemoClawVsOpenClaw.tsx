@@ -604,9 +604,9 @@ const NemoClawVsOpenClaw = () => {
              </p>
              <button
                className="px-12 h-16 bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg rounded-full transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3 mx-auto"
-               onClick={() => window.open('https://apps.apple.com/us/app/ai-agent-openclaw-companion/id6760222159', '_blank')}
+               onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
              >
-               Buy Professional Setup Kit ($49.99)
+               Get Started
                <ChevronRight className="w-5 h-5" />
              </button>
           </motion.div>

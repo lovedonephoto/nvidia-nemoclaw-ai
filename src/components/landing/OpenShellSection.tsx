@@ -31,15 +31,6 @@ const OpenShellSection = () => {
                    <span className="text-foreground shrink-0">curl -fsSL https://get.nemoclaw.ai/</span>
                    <span className="blur-[40px] select-none opacity-5 pointer-events-none">install | bash --config=PRO_SETUP_KIT</span>
                  </div>
-                 <div className="absolute inset-0 bg-background/10 backdrop-blur-[1px] flex items-center justify-end pr-1 opacity-100 transition-all pointer-events-auto">
-                    <button 
-                      onClick={() => window.open('https://apps.apple.com/us/app/ai-agent-openclaw-companion/id6760222159', '_blank')}
-                      className="bg-primary text-black text-[10px] font-black px-4 py-2 rounded-full flex items-center gap-2 hover:scale-105 transition-all shadow-xl shadow-primary/20 whitespace-nowrap"
-                    >
-                      <Lock className="w-3 h-3" />
-                      DOWNLOAD AI AGENT APP
-                    </button>
-                 </div>
               </div>
 
           <div className="space-y-4 text-sm sm:text-base">

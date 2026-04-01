@@ -101,9 +101,9 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               className="px-12 h-16 bg-primary hover:bg-primary/90 hover:scale-105 active:scale-95 text-primary-foreground font-bold text-lg rounded-full min-w-[280px] transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3"
-              onClick={() => window.open('https://apps.apple.com/us/app/ai-agent-openclaw-companion/id6760222159', '_blank')}
+              onClick={() => document.getElementById('install-nemoclaw')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Download AI Agent App
+              Get Started
             </button>
           </div>
         </motion.div>

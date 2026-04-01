@@ -73,15 +73,6 @@ const NemoClawInstallSection = () => {
                     <span className="text-foreground/80 shrink-0">curl -fsSL https://get.nemoclaw.ai/</span>
                     <span className="blur-[40px] select-none opacity-5 pointer-events-none break-all">install | bash -s -- edition={platform.keyword === 'nanoclaw' ? 'nano' : platform.keyword.split(' ')[1] || 'standard'}</span>
                  </div>
-                 <div className="absolute inset-0 bg-background/20 backdrop-blur-[2px] flex items-center justify-end pr-2 opacity-100 transition-all pointer-events-auto">
-                    <button 
-                      onClick={() => window.open('https://apps.apple.com/us/app/ai-agent-openclaw-companion/id6760222159', '_blank')}
-                      className="bg-primary text-black text-[9px] font-black px-3 py-1.5 rounded-full flex items-center gap-1.5 hover:scale-105 transition-all shadow-xl shadow-primary/20"
-                    >
-                      <Lock className="w-2.5 h-2.5" />
-                      DOWNLOAD AI AGENT APP
-                    </button>
-                 </div>
               </div>
             </motion.div>
           ))}

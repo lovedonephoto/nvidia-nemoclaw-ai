@@ -137,10 +137,10 @@ const UgcClaw = () => {
             </div>
 
             <button 
-               onClick={() => window.open('https://apps.apple.com/us/app/ai-agent-openclaw-companion/id6760222159', '_blank')}
+               onClick={() => window.location.href = '/#install-nemoclaw'}
                className="h-20 px-12 bg-primary text-black font-black text-xl rounded-full flex items-center justify-center gap-4 hover:scale-105 transition-all shadow-2xl shadow-primary/40 group active:scale-95"
             >
-               Get UGC Setup ($49.99)
+               Get Started
                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
